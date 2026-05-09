@@ -426,13 +426,10 @@ const Page = () => {
                             <div className="w-12 h-px bg-gradient-to-l from-transparent to-blue-500" />
                         </div>
 
-                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mt-4">
-                            The People Behind
-                            <span className="block bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-                                Every Project
-                            </span>
+                        <h2 className="text-4xl md:text-4xl lg:text-5xl  font-bold mt-4">
+                            The People Behind  Every Project
                         </h2>
-
+                        
                         <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mt-6 rounded-full" />
 
                         <p className="text-slate-300 mt-8 max-w-3xl mx-auto leading-relaxed text-lg">
@@ -509,27 +506,12 @@ const Page = () => {
                                             {member.expertise}
                                         </p>
                                         <div className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-slate-800 border border-slate-700">
-                                            <span className="text-yellow-500 text-sm">⭐</span>
+                                          
                                             <span className="text-slate-300 text-xs font-medium">{member.experience} Experience</span>
                                         </div>
 
 
                                         <div className={`mt-4 flex justify-center gap-2 transition-all duration-300 ${hoveredIndex === index ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'}`}>
-                                            <button className="p-2 rounded-full bg-slate-800 hover:bg-blue-600 transition-colors">
-                                                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                                    <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
-                                                </svg>
-                                            </button>
-                                            <button className="p-2 rounded-full bg-slate-800 hover:bg-blue-600 transition-colors">
-                                                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 0021.553-3.366 13.93 13.93 0 001.88-7.077c0-.208 0-.414-.03-.622 1.234-.89 2.302-2.01 3.14-3.28z" />
-                                                </svg>
-                                            </button>
-                                            <button className="p-2 rounded-full bg-slate-800 hover:bg-blue-600 transition-colors">
-                                                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                                    <path d="M22.23 0H1.77C0.79 0 0 0.79 0 1.77v20.46C0 23.21 0.79 24 1.77 24h20.46c0.98 0 1.77-0.79 1.77-1.77V1.77C24 0.79 23.21 0 22.23 0zM7.08 20.31H3.54V8.62h3.54v11.69zM5.31 7.08c-1.15 0-2.08-0.93-2.08-2.08s0.93-2.08 2.08-2.08 2.08 0.93 2.08 2.08-0.93 2.08-2.08 2.08zM20.31 20.31h-3.54v-5.85c0-1.39-0.03-3.15-1.92-3.15s-2.23 1.5-2.23 3.08v5.92h-3.54V8.62h3.38v1.58h0.05c0.47-0.89 1.62-1.85 3.38-1.85 3.61 0 4.27 2.38 4.27 5.46v6.5z" />
-                                                </svg>
-                                            </button>
                                         </div>
                                     </div>
                                 </div>
