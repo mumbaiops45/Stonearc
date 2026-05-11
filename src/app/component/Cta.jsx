@@ -1,164 +1,273 @@
 "use client";
 
-import React, { useEffect, useState, useRef } from "react";
+import React, {
+  useEffect,
+  useState,
+  useRef,
+} from "react";
+
+import {
+  motion,
+  AnimatePresence,
+} from "framer-motion";
+
 import { items } from "../data/data";
 
 const Cta = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] =
+    useState(0);
+
   const sectionRef = useRef(null);
-  const intervalRef = useRef(null);
 
-
+  
   useEffect(() => {
-    let ticking = false;
-
-    const updateIndex = () => {
-      if (!sectionRef.current) return;
-
-      const rect = sectionRef.current.getBoundingClientRect();
-      const windowHeight = window.innerHeight;
-
-      const totalScroll = rect.height - windowHeight;
-      const scrolled = Math.min(Math.max(-rect.top, 0), totalScroll);
-
-      const progress = totalScroll > 0 ? scrolled / totalScroll : 0;
-
-      const index = Math.min(
-        items.length - 1,
-        Math.floor(progress * items.length)
+    const interval = setInterval(() => {
+      setActiveIndex((prev) =>
+        prev === items.length - 1
+          ? 0
+          : prev + 1
       );
+    }, 4000);
 
-      setActiveIndex(index);
-    };
-
-    const onScroll = () => {
-    
-      if (intervalRef.current) {
-        clearInterval(intervalRef.current);
-      }
-
-      if (!ticking) {
-        window.requestAnimationFrame(() => {
-          updateIndex();
-          ticking = false;
-        });
-        ticking = true;
-      }
-
-      intervalRef.current = setInterval(() => {
-        setActiveIndex((prev) => {
-          const next = prev + 1;
-          return next >= items.length ? 0 : next;
-        });
-      }, 3500);
-    };
-
-    window.addEventListener("scroll", onScroll);
-
-    return () => window.removeEventListener("scroll", onScroll);
+    return () => clearInterval(interval);
   }, []);
 
-  useEffect(() => {
-    intervalRef.current = setInterval(() => {
-      setActiveIndex((prev) => {
-        const next = prev + 1;
-        return next >= items.length ? 0 : next;
-      });
-    }, 3500);
-
-    return () => clearInterval(intervalRef.current);
-  }, []);
-
-  const activeItem = items?.[activeIndex] || items[0];
+  const activeItem =
+    items?.[activeIndex] || items[0];
 
   return (
     <section
       ref={sectionRef}
-      className="bg-slate-950 text-white py-28 px-6"
+      className="relative overflow-hidden bg-[#020617] py-10 px-6 text-white"
     >
-      <div className="max-w-7xl mx-auto">
+     
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
 
-        <div className="text-center mb-20">
-          <h5 className="text-blue-500 tracking-[4px] font-semibold text-sm uppercase">
+       
+        <div className="absolute top-[10%] left-[5%] w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[140px]" />
+
+       
+        <div className="absolute bottom-[10%] right-[5%] w-[500px] h-[500px] bg-cyan-500/10 rounded-full blur-[140px]" />
+
+        <div className="absolute top-[40%] left-[40%] w-[300px] h-[300px] bg-indigo-500/10 rounded-full blur-[120px]" />
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto">
+
+        <motion.div
+          initial={{
+            opacity: 0,
+            y: 50,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+          }}
+          transition={{
+            duration: 1.2,
+            ease: [0.22, 1, 0.36, 1],
+          }}
+          className="text-center mb-28"
+        >
+          <span className="text-cyan-400 uppercase tracking-[6px] text-sm font-semibold">
             Why Stonearc
-          </h5>
+          </span>
 
-          <h3 className="text-4xl md:text-5xl font-bold mt-4">
-            Why Clients Choose Stonearc Engineers
-          </h3>
+          <h2 className="mt-6 text-4xl md:text-4xl font-bold leading-tight">
+            Why Clients Choose  &nbsp;
+            Stonearc Engineers
+          </h2>
 
-          <p className="text-slate-300 mt-6 max-w-3xl mx-auto leading-7 text-lg">
-            We don’t just build structures — we deliver trust, transparency, and engineered precision from concept to completion.
+          <p className="text-slate-300 mt-8 max-w-3xl mx-auto leading-9 text-lg md:text-xl">
+            We don’t just build structures —
+            we deliver trust, transparency,
+            and engineered precision from
+            concept to completion.
           </p>
+        </motion.div>
+
+       
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+
+          <div className="space-y-6">
+
+            {items.map((item, index) => (
+              <motion.div
+                key={index}
+                onClick={() =>
+                  setActiveIndex(index)
+                }
+                initial={{
+                  opacity: 0,
+                  y: 40,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                }}
+                transition={{
+                  duration: 0.8,
+                  delay: index * 0.1,
+                }}
+                whileHover={{
+                  scale: 1.02,
+                }}
+                className={`group relative overflow-hidden cursor-pointer rounded-[28px] border backdrop-blur-xl transition-all duration-700 ${
+                  activeIndex === index
+                    ? "border-cyan-400/50 bg-white/10 shadow-[0_20px_80px_rgba(34,211,238,0.15)]"
+                    : "border-white/10 bg-white/[0.03] hover:bg-white/[0.06]"
+                }`}
+              >
+                
+                {activeIndex === index && (
+                  <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 pointer-events-none" />
+                )}
+
+                <div className="relative z-10 p-3">                 
+                  <p
+                    className={`leading-8 text-lg transition-all duration-500 ${
+                      activeIndex === index
+                        ? "text-white"
+                        : "text-slate-400"
+                    }`}
+                  >
+                    {item.text}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          
+          <div className="relative">
+
+          
+            <div className="absolute -inset-4 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 blur-3xl opacity-40 rounded-[40px]" />
+
+            <div className="sticky top-24">
+
+              <div className="relative overflow-hidden rounded-[40px] border border-white/10 bg-white/[0.03] backdrop-blur-xl shadow-[0_30px_120px_rgba(0,0,0,0.6)]">
+
+                <AnimatePresence mode="wait">
+                  <motion.img
+                    key={activeItem.image}
+                    src={activeItem.image}
+                    alt="Stonearc"
+                    initial={{
+                      opacity: 0,
+                      scale: 1.1,
+                    }}
+                    animate={{
+                      opacity: 1,
+                      scale: 1,
+                    }}
+                    exit={{
+                      opacity: 0,
+                      scale: 0.96,
+                    }}
+                    transition={{
+                      duration: 1.2,
+                      ease: [0.22, 1, 0.36, 1],
+                    }}
+                    className="w-full h-[620px] object-cover"
+                  />
+                </AnimatePresence>
+
+                
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
+
+               
+                <div className="absolute bottom-8 left-8 right-8">
+
+                  <div className="rounded-2xl border border-white/10 bg-black/30 backdrop-blur-xl p-6">
+
+                    <p className="text-sm uppercase tracking-[4px] text-cyan-400 mb-3">
+                      Stonearc Engineers
+                    </p>
+
+                    <h4 className="text-xl font-semibold leading-snug">
+                      Building premium engineering
+                      solutions with precision &
+                      modern execution.
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
       
-        <div className="flex flex-col lg:flex-row gap-14">
+        <motion.div
+          initial={{
+            opacity: 0,
+            y: 60,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+          }}
+          transition={{
+            duration: 1.2,
+          }}
+          className="relative mt-40 overflow-hidden rounded-[40px] border border-white/10 bg-white/[0.04] backdrop-blur-2xl p-12 md:p-20 text-center shadow-[0_20px_100px_rgba(0,0,0,0.5)]"
+        >
+         
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[400px] h-[400px] bg-cyan-500/10 blur-[120px]" />
 
-          <div className="w-full lg:w-1/2 space-y-6">
+          <div className="relative z-10">
 
-            {items.map((item, index) => (
-              <div
-                key={index}
-                className={`p-6 rounded-2xl border transition-all duration-500 cursor-pointer ${
-                  activeIndex === index
-                    ? "bg-blue-600/10 border-blue-500 scale-[1.02] shadow-lg shadow-blue-500/10"
-                    : "bg-slate-900/40 border-slate-800 opacity-60 hover:opacity-100"
-                }`}
+            <span className="text-cyan-400 uppercase tracking-[5px] text-sm font-semibold">
+              Start Your Project
+            </span>
+
+            <h3 className="mt-6 text-4xl md:text-4xl font-bold leading-tight">
+              Ready to Build
+              <br />
+              Something Exceptional?
+            </h3>
+
+            <p className="text-slate-300 mt-8 max-w-3xl mx-auto text-md md:text-xl leading-9">
+              Whether you have a detailed
+              project brief or just an initial
+              vision — our team is ready to
+              engineer the right path forward.
+            </p>
+
+            <div className="mt-12 flex flex-col sm:flex-row gap-5 justify-center">
+
+              <motion.button
+                whileHover={{
+                  scale: 1.04,
+                  y: -2,
+                }}
+                whileTap={{
+                  scale: 0.97,
+                }}
+                className="group relative overflow-hidden rounded-full bg-gradient-to-r from-blue-400 to-blue-500 px-10 py-4 font-semibold text-black transition-all duration-500"
               >
-                <p className="text-slate-200 leading-7">
-                  {item.text}
-                </p>
-              </div>
-            ))}
+                <span className="relative z-10">
+                  Request Consultation
+                </span>
 
-          </div>
+                <div className="absolute inset-0 bg-white opacity-0 transition-opacity duration-500 group-hover:opacity-20" />
+              </motion.button>
 
-          <div className="w-full lg:w-1/2">
-            <div className="sticky top-24">
-
-              <div className="relative rounded-3xl overflow-hidden border border-slate-800 shadow-2xl group">
-
-                <img
-                  src={activeItem?.image}
-                  alt="Stonearc"
-                  className="w-full h-[520px] object-cover transition-all duration-700 group-hover:scale-105"
-                />
-
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent pointer-events-none" />
-
-              </div>
-
+              <motion.button
+                whileHover={{
+                  scale: 1.04,
+                  y: -2,
+                }}
+                whileTap={{
+                  scale: 0.97,
+                }}
+                className="rounded-full border border-white/10 bg-white/[0.04] backdrop-blur-xl px-10 py-4 font-semibold hover:border-cyan-400/50 transition-all duration-500"
+              >
+                Download Brochure
+              </motion.button>
             </div>
           </div>
-
-        </div>
-
-
-        <div className="mt-28 bg-gradient-to-r from-slate-900/80 to-slate-800/80 backdrop-blur-xl border border-slate-700 rounded-3xl p-10 md:p-14 text-center shadow-2xl">
-
-          <h3 className="text-3xl md:text-4xl font-bold">
-            Ready to Build?
-          </h3>
-
-          <p className="text-slate-300 mt-6 max-w-2xl mx-auto text-lg leading-8">
-            Whether you have a detailed brief or just an idea on paper — our team is ready to listen, evaluate, and engineer the right path forward.
-          </p>
-
-          <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-
-            <button className="px-8 py-3 bg-blue-500 hover:bg-blue-600 rounded-lg font-semibold transition hover:scale-105">
-              Request a Consultation
-            </button>
-
-            <button className="px-8 py-3 border border-slate-500 hover:border-blue-500 rounded-lg font-semibold transition hover:scale-105">
-              Download Our Brochure
-            </button>
-
-          </div>
-
-        </div>
-
+        </motion.div>
       </div>
     </section>
   );

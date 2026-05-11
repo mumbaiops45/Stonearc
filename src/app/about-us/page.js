@@ -1,11 +1,15 @@
 "use client"
 import React, { useEffect, useRef, useState } from "react"
 import { values, teamMembers, expertiseAreas } from "../data/data"
+import { useParallax } from "../../../hooks/useParallax"
 
 const Page = () => {
     const [openIndex, setOpenIndex] = useState(0)
     const [hoveredIndex, setHoveredIndex] = useState(null)
     const sectionRef = useRef(null);
+    const heroParallax = useParallax(0.2);
+    const sectionParallax = useParallax(0.12);
+    const slowParallax = useParallax(0.06);
 
     const toggle = (index) => {
         setOpenIndex(openIndex === index ? null : index)
@@ -17,7 +21,7 @@ const Page = () => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add
-                            ('anumate-fadeInUp')
+                            ('animate-fadeInUp')
                     }
                 })
             },
@@ -34,7 +38,9 @@ const Page = () => {
     return (
         <section>
             <div className="relative w-full h-screen overflow-hidden">
-                <div className="absolute inset-0 animate-kenburns">
+                 <div className="absolute inset-0 "
+                 style={{ transform: `translateY(${heroParallax}px) scale(1.1)`}}
+                 >
                     <img
                         src="/about.jpg"
                         alt="About"
@@ -114,12 +120,7 @@ const Page = () => {
           animation: fadeIn 2s ease forwards;
         }
       `}</style>
-
-
             </div>
-
-
-
             <div className="w-full min-h-screen bg-[#0f172a] text-white px-6 md:px-16 py-20 flex flex-col lg:flex-row items-center justify-between gap-14 overflow-hidden">
                 <div className="lg:w-1/2 space-y-6 z-10">
                     <button className="border border-white/30 bg-white/10 backdrop-blur-md px-5 py-2 rounded-full text-sm tracking-[4px] uppercase hover:bg-white hover:text-black transition-all duration-500 shadow-lg">
@@ -155,7 +156,11 @@ const Page = () => {
 
                 <div className="lg:w-1/2 relative flex justify-center">
                     <div className="absolute -inset-4 bg-blue-500/20 blur-3xl rounded-3xl"></div>
-                    <div className="relative overflow-hidden rounded-3xl shadow-2xl group max-w-[600px]">
+                     <div className="relative overflow-hidden rounded-3xl shadow-2xl group max-w-[600px]"
+                     style={{
+                        transform: `translateY(${sectionParallax}px)`
+                     }}
+                     >
 
                         <img
                             src="/who.jpg"
@@ -179,8 +184,11 @@ const Page = () => {
 
 
             <div className="relative w-full bg-[#0b1120] overflow-hidden py-24 px-6 md:px-16">
-
-                <div className="absolute top-0 left-0 w-96 h-96 bg-blue-500/10 blur-3xl rounded-full"></div>
+                 <div className="absolute top-0 left-0 w-96 h-96 bg-blue-500/10 blur-3xl rounded-full"
+                 style={{
+                    transform: `translateY(${heroParallax * 0.5})`
+                 }}
+                 />
                 <div className="absolute bottom-0 right-0 w-96 h-96 bg-cyan-400/10 blur-3xl rounded-full"></div>
 
                 <div className="relative z-10 grid lg:grid-cols-2 gap-16 items-center">
@@ -188,7 +196,11 @@ const Page = () => {
                     <div className="relative group">
 
 
-                        <div className="overflow-hidden rounded-[30px] shadow-2xl">
+                          <div className="overflow-hidden rounded-[30px] shadow-2xl"
+                          style={{
+                            transform: `translateY(${slowParallax})`
+                          }}
+                          >
                             <img
                                 src="/imgsrc.jpg"
                                 alt="Our Story"
@@ -417,7 +429,11 @@ const Page = () => {
 
                 <div className="max-w-7xl mx-auto relative z-10">
 
-                    <div className="text-center mb-20 animate-on-scroll">
+                    <div className="text-center mb-20 animate-on-scroll"
+                    style={{
+                        transform: `translateY(${sectionParallax * 0.3}px)`
+                    }}
+                    >
                         <div className="inline-flex items-center gap-3 mb-4">
                             <div className="w-12 h-px bg-gradient-to-r from-transparent to-blue-500" />
                             <span className="text-blue-500 tracking-[6px] font-semibold text-sm uppercase">

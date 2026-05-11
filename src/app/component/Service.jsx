@@ -1,90 +1,222 @@
 "use client";
 
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useRef } from "react";
+import {
+  motion,
+  useScroll,
+  useTransform,
+  useSpring,
+} from "framer-motion";
+
 import { services } from "../data/data";
+
+const ServiceCard = ({ service, index }) => {
+  const ref = useRef(null);
+
+  
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start 0.9", "end 0.1"],
+  });
+
+ 
+  const imageYRaw = useTransform(
+    scrollYProgress,
+    [0, 0.5, 1],
+    [60, 0, -60]
+  );
+
+  const textYRaw = useTransform(
+    scrollYProgress,
+    [0, 0.5, 1],
+    [30, 0, -30]
+  );
+
+
+  const scaleRaw = useTransform(
+    scrollYProgress,
+    [0, 0.5, 1],
+    [0.95, 1, 0.95]
+  );
+
+  const opacityRaw = useTransform(
+    scrollYProgress,
+    [0, 0.5, 1],
+    [0.6, 1, 0.6]
+  );
+
+  // Smooth spring system (premium feel)
+  const imageY = useSpring(imageYRaw, {
+    stiffness: 120,
+    damping: 20,
+    mass: 0.8,
+  });
+
+  const textY = useSpring(textYRaw, {
+    stiffness: 120,
+    damping: 20,
+    mass: 0.8,
+  });
+
+ 
+
+  const scale = useSpring(scaleRaw, {
+    stiffness: 100,
+    damping: 20,
+  });
+
+  const opacity = useSpring(opacityRaw, {
+    stiffness: 100,
+    damping: 20,
+  });
+
+  return (
+    <motion.div
+      ref={ref}
+      style={{ scale, opacity }}
+      initial={{ opacity: 0, y: 80 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: false, amount: 0.1 }}
+      transition={{
+        duration: 0.6,
+        delay: index * 0.05,
+        ease: [0.22, 1, 0.36, 1],
+      }}
+      className={`relative flex flex-col md:flex-row items-center justify-between gap-16 md:gap-24 ${
+        index % 2 !== 0 ? "md:flex-row-reverse" : ""
+      }`}
+    >
+      
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <div className="w-[320px] h-[320px] bg-blue-500/10 blur-[120px] rounded-full" />
+      </div>
+
+     
+      <motion.div
+          style={{ y: imageY }}
+        whileHover={{
+          scale: 1.04,
+        }}
+        transition={{
+          duration: 0.8,
+          ease: [0.25, 1, 0.3, 1],
+        }}
+        className="relative w-full md:w-1/2 will-change-transform"
+      >
+        
+        <div className="absolute -inset-[1px] rounded-[32px] bg-gradient-to-r from-blue-500/30 via-cyan-400/10 to-blue-500/30 blur-sm opacity-60" />
+
+       
+        <div className="relative overflow-hidden rounded-[32px] border border-white/[0.06] bg-white/[0.03] backdrop-blur-2xl shadow-[0_20px_80px_rgba(0,0,0,0.5)]">
+          
+        
+          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent z-10" />
+
+          <motion.img
+            src={service.image}
+            alt={service.title}
+            className="w-full h-[450px] object-cover"
+            whileHover={{ scale: 1.06 }}
+            transition={{ duration: 1.2 }}
+          />
+        </div>
+      </motion.div>
+
+     
+      <motion.div
+        style={{ y: textY }}
+        className="relative z-10 w-full md:w-1/2 will-change-transform"
+      >
+        <motion.span
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.1 }}
+          className="inline-block text-cyan-400 uppercase tracking-[5px] text-xs font-semibold mb-5"
+        >
+          Our Expertise
+        </motion.span>
+
+        <motion.h2
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.15 }}
+          className="text-4xl md:text-4xl font-bold leading-[1.05] tracking-tight mb-8"
+        >
+          {service.title}
+        </motion.h2>
+
+        <motion.p
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="text-white text-md leading-8 max-w-xl"
+        >
+          {service.description}
+        </motion.p>
+
+        <motion.button
+          whileHover={{
+            scale: 1.04,
+            y: -2,
+          }}
+          whileTap={{ scale: 0.97 }}
+          className="group relative mt-10 overflow-hidden rounded-full border border-white/[0.08] bg-white/[0.03] px-8 py-4 backdrop-blur-2xl transition-all duration-500"
+        >
+          <span className="relative z-10 font-medium tracking-wide">
+            Learn More
+          </span>
+
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-400 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+        </motion.button>
+      </motion.div>
+    </motion.div>
+  );
+};
 
 const Service = () => {
   return (
-    <section className="bg-slate-950 py-24 px-6 text-white">
-      <div className="max-w-7xl mx-auto">
+    <section className="relative overflow-hidden bg-[#020617] py-16 px-6 text-white">
+      
+    
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-[5%] left-[5%] w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[140px]" />
+        <div className="absolute bottom-[5%] right-[5%] w-[500px] h-[500px] bg-cyan-500/10 rounded-full blur-[140px]" />
+      </div>
 
-        <div className="text-center mb-20">
-          <h3 className="text-4xl md:text-5xl font-bold mb-6">
+      <div className="relative z-10 max-w-7xl mx-auto">
+
+        
+        <motion.div
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 1,
+            ease: [0.22, 1, 0.36, 1],
+          }}
+          className="text-center mb-36"
+        >
+          <span className="text-cyan-400 uppercase tracking-[6px] text-sm font-semibold">
+            Premium Engineering
+          </span>
+
+          <h1 className="mt-6 text-4xl md:text-4xl font-bold leading-tight">
             What We Build
-          </h3>
+          </h1>
 
-          <p className="max-w-3xl mx-auto text-slate-300 text-lg leading-8">
-            Stonearc Engineers operates across three core verticals — each backed
-            by a dedicated team, proven processes, and an uncompromising approach
-            to quality.
+          <p className="max-w-3xl mx-auto mt-8 text-slate-300 text-xl leading-9">
+            Stonearc Engineers operates across three specialized verticals —
+            combining innovation, precision engineering, and uncompromising execution standards.
           </p>
-        </div>
+        </motion.div>
 
-        <div className="space-y-32 md:space-y-40">
-
+        <div className="space-y-40 md:space-y-56">
           {services.map((service, index) => (
-            <motion.div
+            <ServiceCard
               key={index}
-              initial={{
-                opacity: 0,
-                y: index % 2 === 0 ? 100 : -100,
-                scale: 0.95,
-              }}
-              whileInView={{
-                opacity: 1,
-                y: 0,
-                scale: 1,
-              }}
-              viewport={{ once: false, amount: 0.3 }}
-              transition={{
-                duration: 0.9,
-                ease: "easeOut",
-              }}
-              className={`flex flex-col md:flex-row items-center justify-between gap-16 md:gap-20 ${
-                index % 2 !== 0 ? "md:flex-row-reverse" : ""
-              }`}
-            >
-
-              <motion.div
-                whileHover={{ scale: 1.03 }}
-                transition={{ duration: 0.4 }}
-                className="w-full md:w-1/2 overflow-hidden rounded-3xl shadow-2xl"
-              >
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="w-full h-[420px] object-cover rounded-3xl"
-                />
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, x: index % 2 === 0 ? 60 : -60 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: false, amount: 0.3 }}
-                transition={{ duration: 0.8 }}
-                className="w-full md:w-1/2"
-              >
-                <span className="text-blue-500 uppercase tracking-[3px] text-sm font-semibold">
-                  Our Expertise
-                </span>
-
-                <h4 className="text-3xl md:text-4xl font-bold mt-4 mb-6">
-                  {service.title}
-                </h4>
-
-                <p className="text-slate-300 leading-8 text-base md:text-lg max-w-xl">
-                  {service.description}
-                </p>
-
-                <button className="mt-8 px-7 py-3 bg-blue-500 hover:bg-blue-600 hover:scale-105 text-white font-semibold rounded-lg transition duration-300">
-                  Learn More
-                </button>
-              </motion.div>
-
-            </motion.div>
+              service={service}
+              index={index}
+            />
           ))}
-
         </div>
       </div>
     </section>
@@ -92,3 +224,5 @@ const Service = () => {
 };
 
 export default Service;
+
+

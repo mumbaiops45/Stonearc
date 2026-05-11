@@ -22,7 +22,6 @@ export const content = [
 ]
 
 
-
 export const services = [
     {
         title: 'Construction',
@@ -37,7 +36,7 @@ export const services = [
     {
         title: 'Pre-Engineered Buildings (PEB)',
         description: 'We design, supply, and erect Pre-Engineered Steel Buildings — the fastest, most cost-efficient solution for large-span industrial and commercial spaces. Warehouses, factories, logistics hubs, aircraft hangars — Stonearc PEB delivers in weeks, not months.',
-        image: '/peb.jpg'
+        image: '/peb.webp'
     }
 ]
 
@@ -300,3 +299,71 @@ export const materials = [
         image:"/Brickwork.jpg", certified: true },
     { name: "Waterproofing Systems", specification: "Dr. Fixit, Fosroc, and equivalent certified brands", icon: "💧", image: "/Waterproofing.jpg" , certified: true }
 ]
+
+export   const cards = [
+        {
+            img: "/floorplan.jpg",
+            title: "Floor Plans, Sections & Elevations",
+            desc: "Comprehensive technical drawings that clearly define layouts, vertical connections, spatial relationships, and facade details for accurate on-site execution.",
+        },
+        {
+            img: "/detailsdraw.jpg",
+            title: "Detailed Drawings for Construction",
+            desc: "Precise dimensioned drawings and technical documentation prepared to support smooth construction workflows and minimize execution errors.",
+        },
+        {
+            img: "/door.png",
+            title: "Door & Window Schedules",
+            desc: "Organized schedules specifying dimensions, materials, hardware, and installation details to ensure consistency throughout the project.",
+        },
+        {
+            img: "/finish.jpg",
+            title: "Finish & Material Specifications",
+            desc: "Detailed documentation of finishes, textures, materials, and product selections to maintain design quality and consistency.",
+        },
+        {
+            img: "/mep.jpg",
+            title: "Structural & MEP Coordination",
+            desc: "Integrated coordination with structural, mechanical, electrical, and plumbing systems to ensure seamless execution and compliance.",
+        },
+];
+
+
+export const processData = [
+    {
+        phase: "01",
+        title: "Brief & Requirements",
+        desc: "Understanding project scope, load requirements and feasibility study with cost estimation.",
+        image: "",
+    },
+    {
+        phase: "02",
+        title: "Design Development",
+        desc: "Structural design, analysis, and connection detailing with engineering approval.",
+        image: "",
+    },
+    {
+        phase: "03",
+        title: "Fabrication",
+        desc: "Factory fabrication of primary frames and secondary steel components under controlled conditions.",
+        image: "",
+    },
+    {
+        phase: "04",
+        title: "Logistics",
+        desc: "Sequenced delivery planning ensuring smooth site execution without delays.",
+        image: "",
+    },
+    {
+        phase: "05",
+        title: "Erection",
+        desc: "On-site assembly of steel structure using certified erection teams and supervision.",
+        image: "",
+    },
+    {
+        phase: "06",
+        title: "Finishing",
+        desc: "Final installation of roofing, cladding, gutters, and full project handover.",
+        image: "/finish.jpg",
+    }
+];

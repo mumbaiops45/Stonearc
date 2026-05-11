@@ -29,8 +29,6 @@ const page = () => {
         <section ref={sectionRef} className="relative bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950   overflow-hidden">
 
             <div className="relative w-full h-screen overflow-hidden">
-
-
                 <div className="absolute inset-0 animate-kenburns">
                     <img
                         src="/pric.jpg"
