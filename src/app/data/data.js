@@ -334,36 +334,115 @@ export const processData = [
         phase: "01",
         title: "Brief & Requirements",
         desc: "Understanding project scope, load requirements and feasibility study with cost estimation.",
-        image: "",
+        image: "/verifyrequirement.png",
     },
     {
         phase: "02",
         title: "Design Development",
         desc: "Structural design, analysis, and connection detailing with engineering approval.",
-        image: "",
+        image: "/development.jpg",
     },
     {
         phase: "03",
         title: "Fabrication",
         desc: "Factory fabrication of primary frames and secondary steel components under controlled conditions.",
-        image: "",
+        image: "/fabrication.webp",
     },
     {
         phase: "04",
         title: "Logistics",
         desc: "Sequenced delivery planning ensuring smooth site execution without delays.",
-        image: "",
+        image: "/logistic.png",
     },
     {
         phase: "05",
         title: "Erection",
         desc: "On-site assembly of steel structure using certified erection teams and supervision.",
-        image: "",
+        image: "/Erection.png",
     },
     {
         phase: "06",
         title: "Finishing",
         desc: "Final installation of roofing, cladding, gutters, and full project handover.",
         image: "/finish.jpg",
+    }
+];
+
+
+
+export const pebProjects = [
+    {
+        title: "Logistics Distribution Centre",
+        image: "/LogisticsDistribution.jpg"
+    },
+    {
+        title: "Manufacturing Plant",
+        image: "/ManufacturingPlant.jpg"
+    },
+    {
+        title: "Cold Chain Warehouse",
+        image: "/ColdChainWarehouse.jpg"
+    },
+    {
+        title: "Agri Processing Unit",
+        image: "/agriprocess.jpg"
+    },
+    {
+        title: "Commercial Showroom",
+        image: "/showroom.png"
+    },
+    {
+        title: "Aircraft Hangar",
+        image: "/aircrafthanger.webp"
+    }
+
+];
+
+
+
+export const projects = [
+    {
+        title: "Residential Apartment Complex",
+        image: "/residential.jpg",
+    },
+    {
+        title:
+            "Commercial Office Building",
+        image: "/commercialoffice.jpg"
+    },
+    {
+        title: "Institutional Campus",
+        image: "/InstitutionalCampus.jpg"
+    },
+    {
+        title: "Luxury Villa",
+        image: "/LuxuryVilla.jpg"
+    },
+    {
+        title: "Mixed Use Complex",
+        image: "/MixedUseComplex.jpg"
+    }, {
+        title: "Hospital Building",
+        image: "/HospitalBuilding.jpg"
+    }
+
+];
+
+export const architecture = [
+    {
+        title: "Industrial Masterplan",
+        image: "/hello.jpg"
+    },
+    {
+        title: "Luxury Residential Villa",
+        image: "/hello.jpg"
+    },
+    {
+        title: "Commercial Office Tower",
+        image: "/hello.jpg"
+    },
+    {
+        title: "Institutional Campus Plan",
+        image: "/hello.jpg"
     }
 ];

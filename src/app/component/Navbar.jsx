@@ -8,7 +8,8 @@ const navigation = [
   { name: 'Services', href: '/services', current: false },
    { name: 'Architecture', href: '/architecture', current: false },
    { name: 'PEB', href: '/peb', current: false },
-  { name: 'Projects', href: '/projects', current: false },
+   { name: 'Projects', href: '/projects', current: false },
+  { name: 'Why Stonearc', href: '/stonearc', current: false },
   { name: 'Contact Us', href: '/contact', current: false },
   
 ]
