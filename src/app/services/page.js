@@ -73,8 +73,7 @@ const page = () => {
 
 
 
-
-            <div className="grid lg:grid-cols-2 px-16 py-16 gap-12 mb-24 animate-on-scroll">
+            <div className="grid grid-cols-1 lg:grid-cols-2 items-center px-4 sm:px-6 md:px-10 lg:px-16 py-14 md:py-20 gap-10 lg:gap-16 mb-20 md:mb-24 animate-on-scroll">
                 <div className="space-y-6">
                     <div>
                         <span className="text-blue-400 text-sm font-semibold uppercase tracking-wider">OVERVIEW</span>
@@ -171,7 +170,7 @@ const page = () => {
 
             </div>
 
-            <div className="mb-24  animate-on-scroll">
+            <div className="mb-24 animate-on-scroll">
                 <div className="text-center  mb-12">
                     <span className="text-blue-400 text-sm font-semibold uppercase tracking-wider">HOW WE WORK</span>
                     <h2 className="text-3xl md:text-4xl font-bold text-white mt-2">
@@ -180,7 +179,7 @@ const page = () => {
                     <div className="w-20 h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent mx-auto mt-4" />
                 </div>
 
-                <div className="grid grid-cols-1 px-16 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 lg:grid-cols-2 items-center px-4 sm:px-6 md:px-10 lg:px-16 py-14 md:py-20 gap-10 lg:gap-16 mb-20 md:mb-24 animate-on-scroll">
                     {processStages.map((stage, index) => (
                         <div
                             key={index}
