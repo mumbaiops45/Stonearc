@@ -446,3 +446,124 @@ export const architecture = [
         image: "/hello.jpg"
     }
 ];
+
+
+export const industries = [
+  {
+    title: "Manufacturing and Heavy Industry",
+    image: "/heavyIndustries.jpg",
+    desc: "Factories, assembly plants, fabrication shops, and heavy industrial buildings designed for cranes, vibration loads, heat, and process flow.",
+    points: [
+      "Clear-span production floors",
+      "Overhead crane and runway beams",
+      "High-bay storage and mezzanine structures",
+      "Integrated utilities and services",
+    ],
+  },
+  {
+    title: "Logistics and Warehousing",
+    image: "/wherehouse.jpg",
+    desc: "Distribution centres, fulfilment hubs, and cold chain facilities optimized for speed and storage efficiency.",
+    points: [
+      "Column-free warehouse spans",
+      "Dock-level loading systems",
+      "High-bay racking support",
+      "Fire safety and sprinkler coordination",
+    ],
+  },
+  {
+    title: "Automobile and Auto-Ancillary",
+    image: "/automobile.jpg",
+    desc: "Showrooms, service centres, and manufacturing units designed for brand presentation and operational flow.",
+    points: [
+      "Wide-span showroom structures",
+      "Service pits and workshop layouts",
+      "Curtain wall facade integration",
+      "Heavy-duty workshop floors",
+    ],
+  },
+  {
+    title: "Pharmaceuticals and Food Processing",
+    image: "/Pharmaceutical.avif",
+    desc: "GMP-compliant clean facilities with hygienic design, controlled environments, and regulatory-ready execution.",
+    points: [
+      "GMP-compliant construction practices",
+      "Hygienic wall and ceiling systems",
+      "Cleanroom-compatible layouts",
+      "Validated utility integration",
+    ],
+  },
+  {
+    title: "Energy and Power",
+    image: "/energy.jpg",
+    desc: "Industrial-grade infrastructure for power plants, solar systems, substations, and energy facilities.",
+    points: [
+      "Substation and transformer structures",
+      "Solar mounting frameworks",
+      "Heavy structural steel design",
+      "Electrical safety compliance",
+    ],
+  },
+  {
+    title: "Real Estate and Residential Development",
+    image: "/realstate.jpg",
+    desc: "End-to-end engineering support for residential and commercial real estate developers.",
+    points: [
+      "Multi-phase township planning",
+      "Developer coordination models",
+      "Structural optimization",
+      "Cost-efficient execution systems",
+    ],
+  },
+  {
+    title: "Education and Healthcare",
+    image: "/institutionalCampus.jpg",
+    desc: "Schools, hospitals, and research facilities designed for safety, occupancy, and functionality.",
+    points: [
+      "High occupancy load design",
+      "Vibration-controlled structures",
+      "Regulatory compliance layouts",
+      "Durable RCC frameworks",
+    ],
+  },
+  {
+    title: "Government and Civic Infrastructure",
+    image: "/Governmentand.jpg",
+    desc: "Public sector buildings executed with discipline, documentation, and strict compliance standards.",
+    points: [
+      "Government specification compliance",
+      "Full documentation delivery",
+      "On-time execution systems",
+      "Transparent project reporting",
+    ],
+  },
+];
+
+
+export const steps = [
+    {
+        step: "1",
+        title: "Initial Response",
+        desc: "A senior engineer or project manager contacts you within 24 hours.",
+    },
+    {
+        step: "2",
+        title: "Site Visit",
+        desc: "We visit your site for physical assessment within 3–5 working days.",
+    },
+    {
+        step: "3",
+        title: "Preliminary Estimate",
+        desc: "Cost and timeline estimate shared within 5–7 days after visit.",
+    },
+    {
+        step: "4",
+        title: "Proposal",
+        desc: "Detailed proposal including scope, cost, and execution plan.",
+    },
+    {
+        step: "5",
+        title: "Project Start",
+        desc: "Mobilisation begins as per mutually agreed schedule.",
+    },
+];

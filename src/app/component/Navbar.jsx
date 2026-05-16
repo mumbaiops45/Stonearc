@@ -33,7 +33,8 @@ const navigation = [
   },
   { name: 'Projects', href: '/projects' },
   { name: 'Why Stonearc', href: '/stonearc' },
-  { name: 'Process', href: '/process' },
+  { name: 'Process', href: '/process' }, 
+  { name: 'Industries', href: '/industries' },
   { name: 'Contact Us', href: '/contact' },
 ]
 
