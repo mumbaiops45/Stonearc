@@ -11,7 +11,7 @@ const images = [
 
 const Hero = () => {
   const [currentImage, setCurrentImage] = useState(0)
-
+  
   const currentContent = content[currentImage]
 
   useEffect(() => {
