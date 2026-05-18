@@ -18,7 +18,6 @@ const ServiceCard = ({ service, index }) => {
     target: ref,
     offset: ["start 0.9", "end 0.1"],
   });
-
  
   const imageYRaw = useTransform(
     scrollYProgress,
@@ -45,7 +44,6 @@ const ServiceCard = ({ service, index }) => {
     [0.6, 1, 0.6]
   );
 
-  // Smooth spring system (premium feel)
   const imageY = useSpring(imageYRaw, {
     stiffness: 120,
     damping: 20,
@@ -58,8 +56,6 @@ const ServiceCard = ({ service, index }) => {
     mass: 0.8,
   });
 
- 
-
   const scale = useSpring(scaleRaw, {
     stiffness: 100,
     damping: 20,
@@ -69,6 +65,7 @@ const ServiceCard = ({ service, index }) => {
     stiffness: 100,
     damping: 20,
   });
+
 
   return (
     <motion.div
@@ -87,9 +84,9 @@ const ServiceCard = ({ service, index }) => {
       }`}
     >
       
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+      {/* <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <div className="w-[320px] h-[320px] bg-blue-500/10 blur-[120px] rounded-full" />
-      </div>
+      </div> */}
 
      
       <motion.div
@@ -193,7 +190,7 @@ const Service = () => {
             duration: 1,
             ease: [0.22, 1, 0.36, 1],
           }}
-          className="text-center mb-36"
+          className="text-center mb-16"
         >
           <span className="text-cyan-400 uppercase tracking-[6px] text-sm font-semibold">
             Premium Engineering
@@ -209,7 +206,7 @@ const Service = () => {
           </p>
         </motion.div>
 
-        <div className="space-y-40 md:space-y-56">
+        <div className="space-y-20 md:space-y-10">
           {services.map((service, index) => (
             <ServiceCard
               key={index}

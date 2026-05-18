@@ -84,7 +84,7 @@ const Hero = () => {
               </h1>
 
 
-              <p className="mb-10 max-w-xl text-sm leading-relaxed text-gray-300 sm:text-base md:text-md">
+              <p className="mb-10 max-w-xl text-sm leading-relaxed text-white sm:text-base md:text-md">
                 {currentContent.para1}
               </p>
 
