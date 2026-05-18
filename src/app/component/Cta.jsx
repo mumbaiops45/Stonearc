@@ -404,7 +404,7 @@ const Cta = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-          className="text-center mb-10 md:mb-8"
+          className=" mb-10 md:mb-8"
         >
           <div className="inline-flex items-center gap-3 px-4 py-[7px] rounded-full border border-cyan-500/22 bg-cyan-500/[0.07] mb-7"
             style={{ borderColor: "rgba(6,182,212,0.22)" }}>
@@ -418,15 +418,15 @@ const Cta = () => {
             className="font-bold leading-[1.08]  text-5xl tracking-[-0.032em]"
           
           >
-            Why Clients Choose
-            <span className="block text-transparent bg-clip-text mt-2"
+            Why Clients Choose &nbsp;
+            <span className="inline-block text-transparent bg-clip-text mt-2"
               style={{ backgroundImage: "linear-gradient(130deg,#38bdf8 0%,#60a5fa 55%,#a5b4fc 100%)" }}>
               Stonearc Engineers
             </span>
           </h2>
 
           <p
-            className="mt-7 max-w-2xl mx-auto text-white text-[17px] leading-[1.88]"
+            className="mt-7 max-w-2xl  text-white text-[17px] leading-[1.88]"
           >
             We don't just build structures — we deliver trust, transparency, and
             engineered precision from concept to completion.
