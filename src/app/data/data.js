@@ -567,3 +567,80 @@ export const steps = [
         desc: "Mobilisation begins as per mutually agreed schedule.",
     },
 ];
+
+
+export const processStagess = [
+  {
+    number: "01",
+    title: "Initial Consultation & Site Assessment",
+    subtitle: "Understanding your vision before drawing a single line.",
+    points: [
+      "Detailed client brief — functional, spatial, and budget requirements",
+      "Site visit and physical assessment — soil, topography, access, utilities, neighbours",
+      "Preliminary feasibility — what is buildable, at what cost, and in what timeframe",
+      "Review of existing drawings, approvals, or structural reports if available",
+    ],
+    receive:
+      "A clear, written project brief confirmed with you before any design work begins. No guesswork. No assumptions.",
+    icon: "◎",
+  },
+  {
+    number: "02",
+    title: "Design & Engineering",
+    subtitle: "Precision architecture backed by structural intelligence.",
+    points: [
+      "Architectural concept and schematic design",
+      "Structural design — foundation, superstructure, and load analysis",
+      "PEB frame analysis and structural planning",
+      "Client review and design revisions",
+      "Working drawings for construction and fabrication",
+    ],
+    receive:
+      "A complete design package including architectural drawings, structural drawings, specifications, and BOQ.",
+    icon: "⬡",
+  },
+  {
+    number: "03",
+    title: "Approvals & Permissions",
+    subtitle: "We handle the complexity so you don't have to.",
+    points: [
+      "Preparation of approval drawings",
+      "Submission and follow-up with local authorities",
+      "Fire NOC and environmental approvals",
+      "RERA registration support where applicable",
+    ],
+    receive:
+      "All statutory approvals managed by Stonearc without clients dealing with approval complexities.",
+    icon: "◈",
+  },
+  {
+    number: "04",
+    title: "Construction & Fabrication",
+    subtitle: "Built to spec. Inspected at every stage.",
+    points: [
+      "Site mobilisation and safety setup",
+      "Foundation execution with QC testing",
+      "Superstructure execution with scheduled inspections",
+      "PEB fabrication and factory quality checks",
+      "Daily progress and manpower reporting",
+    ],
+    receive:
+      "A structure built exactly to design with every structural element inspected and documented.",
+    icon: "⬢",
+  },
+  {
+    number: "05",
+    title: "Finishing & Commissioning",
+    subtitle: "The final 10% that defines the full 100%.",
+    points: [
+      "MEP coordination and installation",
+      "Architectural finishing and facade works",
+      "PEB accessories and finishing systems",
+      "Punch-list walkthrough and corrections",
+      "Final documentation and handover preparation",
+    ],
+    receive:
+      "A fully completed, occupancy-ready building with drawings, certificates, warranties, and manuals.",
+    icon: "◇",
+  },
+];
