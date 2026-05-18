@@ -403,11 +403,11 @@ const Page = () => {
                                 <Field tag="input" placeholder="Email Address" type="email" className="sm:col-span-2" />
                                 <Field tag="input" placeholder="Project Location" type="text" />
                                 <Field tag="select" className="text-white bg-black">
-                                    <option value="" disabled selected>Project Type</option>
-                                    <option>Construction</option>
-                                    <option>Architecture</option>
-                                    <option>PEB Structure</option>
-                                    <option>All Three</option>
+                                    <option value="" disabled selected className="text-black">Project Type</option>
+                                    <option className="text-black">Construction</option>
+                                    <option className="text-black">Architecture</option>
+                                    <option className="text-black">PEB Structure</option>
+                                    <option className="text-black">All Three</option>
                                 </Field>
                             </div>
 
