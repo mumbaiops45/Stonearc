@@ -114,7 +114,7 @@ const Hero = () => {
             </div>
 
 
-            <div className="relative mx-auto w-full max-w-lg">
+            {/* <div className="relative mx-auto w-full max-w-lg">
 
 
               <div className="absolute -inset-1 rounded-[32px] bg-gradient-to-r from-blue-500/30 via-indigo-500/20 to-purple-500/30 blur-3xl" />
@@ -232,7 +232,7 @@ const Hero = () => {
 
                 </div>
               </div>
-            </div>
+            </div> */}
 
           </div>
         </div>

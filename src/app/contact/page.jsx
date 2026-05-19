@@ -189,8 +189,6 @@ const Page = () => {
 
             <div className="max-w-7xl mx-auto px-6 md:px-16 py-12">
                 <div className="grid lg:grid-cols-2 gap-20 items-center">
-
-                    {/* Text */}
                     <motion.div
                         initial={{ opacity: 0, x: -40 }}
                         whileInView={{ opacity: 1, x: 0 }}

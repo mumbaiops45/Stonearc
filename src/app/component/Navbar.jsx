@@ -26,7 +26,7 @@ const navigation = [
   {
     name: 'Services',
     children: [
-      { name: 'Services', href: '/services' },
+      { name: 'Construction', href: '/construction' },
       { name: 'Architecture', href: '/architecture' },
       { name: 'PEB', href: '/peb' },
     ],
@@ -51,10 +51,10 @@ const Navbar = () => {
     >
       {({ open }) => (
         <>
-          {/* Desktop + Mobile Header */}
+          
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex h-20 items-center justify-between">
-              {/* Logo */}
+            
               <div className="flex items-center">
                 <a
                   href="/"
@@ -64,7 +64,7 @@ const Navbar = () => {
                 </a>
               </div>
 
-              {/* Desktop Navigation */}
+              
               <div className="hidden md:flex items-center space-x-2">
                 {navigation.map((item) =>
                   item.children ? (
@@ -111,7 +111,7 @@ const Navbar = () => {
                 )}
               </div>
 
-              {/* Mobile Menu Button */}
+            
               <div className="md:hidden">
                 <DisclosureButton className="inline-flex items-center justify-center rounded-md p-2 text-gray-200 transition hover:bg-white/10 hover:text-white">
                   {open ? (
@@ -124,12 +124,12 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Mobile Navigation */}
+        
           <DisclosurePanel className="border-t border-white/10 bg-black/95 backdrop-blur-xl md:hidden">
             <div className="space-y-2 px-4 py-4">
               {navigation.map((item) =>
                 item.children ? (
-                  // Mobile Dropdown
+               
                   <Disclosure
                     as="div"
                     key={item.name}
