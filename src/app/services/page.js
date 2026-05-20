@@ -60,13 +60,13 @@ const page = () => {
                         <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight animate-fadeUp">
                             Precision Execution From <br />
 
-                            <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
+                            <span className="bg-gradient-to-r from-blue-400 via-blue-400 to-blue-400 bg-clip-text text-transparent">
                                 Ground-Breaking to Handover
                             </span>
                         </h1>
 
 
-                        <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mt-6 rounded-full animate-fadeIn" />
+                        <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-blue-500 mt-6 rounded-full animate-fadeIn" />
                     </div>
                 </div>
             </div>
