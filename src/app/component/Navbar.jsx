@@ -56,7 +56,7 @@ export default function Navbar() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex h-20 items-center justify-between">
               
-              {/* LOGO */}
+            
               <div className="flex items-center">
                 <Link
                   href="/"
@@ -65,7 +65,7 @@ export default function Navbar() {
                   <img
                     src="/logo.png"
                     alt="StoneArc Logo"
-                    className="h-16 w-auto object-contain transition duration-300 group-hover:scale-105"
+                    className="h-20 w-20 object-contain transition duration-300 group-hover:scale-105"
                   />
                 </Link>
               </div>
