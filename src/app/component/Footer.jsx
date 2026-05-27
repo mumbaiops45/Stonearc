@@ -158,7 +158,7 @@ const Footer = () => {
             </div>
 
            
-            <div className="mt-8 flex items-center gap-4">
+            {/* <div className="mt-8 flex items-center gap-4">
 
               <a
                 href="https://facebook.com"
@@ -187,7 +187,7 @@ const Footer = () => {
                 <FaLinkedinIn />
               </a>
 
-            </div>
+            </div> */}
           </div>
         </div>
 
