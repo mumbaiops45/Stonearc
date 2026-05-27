@@ -62,26 +62,23 @@ const page = () => {
 
 
                 <div className="relative z-20 max-w-7xl mx-auto px-6 md:px-16 h-full flex items-center">
-
                     <motion.div
                         className="max-w-3xl"
                         initial="hidden"
                         animate="visible"
                         variants={staggerContainer}
                     >
-
-
                         <motion.div
                             variants={fadeUp}
                             className="inline-flex items-center gap-4 mb-6"
                         >
-                            <div className="w-14 h-[2px] bg-blue-500" />
+                            <div className="w-14 h-[2px] bg-[#fd6402]" />
 
-                            <span className="uppercase tracking-[5px] text-blue-400 text-sm font-semibold">
+                            <span className="uppercase tracking-[5px] text-[#fd6402] text-sm font-semibold">
                                 Construction Services
                             </span>
 
-                            <div className="w-14 h-[2px] bg-blue-500" />
+                            <div className="w-14 h-[2px] bg-[#fd6402]" />
                         </motion.div>
 
                         <motion.h1
@@ -90,7 +87,7 @@ const page = () => {
                         >
                             Our Projects <br />
 
-                            <span className="bg-gradient-to-r from-blue-400 via-blue-400 to-blue-400 bg-clip-text text-transparent">
+                            <span className="bg-gradient-to-r from-[#fd6402] via-[#fd6402] to-[#fd6402] bg-clip-text text-transparent">
                              
                                 Ground-Breaking to Handover
                             </span>
@@ -114,7 +111,7 @@ const page = () => {
                                 boxShadow: "0px 0px 40px rgba(59,130,246,0.5)",
                             }}
                             whileTap={{ scale: 0.95 }}
-                            className="mt-10 px-8 py-4 bg-blue-600 hover:bg-blue-700 rounded-full font-semibold transition-all duration-300"
+                            className="mt-10 px-8 py-4 bg-[#fd6402] hover:bg-[#fd6402] rounded-full font-semibold transition-all duration-300"
                         >
                             Explore Portfolio
                         </motion.button>
@@ -132,13 +129,10 @@ const page = () => {
             >
 
                 <div className="grid lg:grid-cols-2 gap-20 items-center">
-
                     <div>
                         <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full border border-blue-500/30 bg-blue-500/10 backdrop-blur-xl mb-8">
-
-                            <div className="w-2.5 h-2.5 rounded-full bg-blue-400 animate-pulse" />
-
-                            <span className="text-sm tracking-[4px] uppercase text-blue-300 font-semibold">
+                            <div className="w-2.5 h-2.5 rounded-full bg-[#fd6402] animate-pulse" />
+                            <span className="text-sm tracking-[4px] uppercase text-[#fd6402] font-semibold">
                                 Portfolio Introduction
                             </span>
 
@@ -146,21 +140,13 @@ const page = () => {
 
 
                         <h2 className="text-4xl md:text-4xl lg:text-4xl font-bold leading-[1.2] text-white">
-
-
-
                             Every Sector.
-
-                            <span className="block mt-3 bg-gradient-to-r from-blue-400 via-cyan-300 to-purple-400 bg-clip-text text-transparent">
+                            <span className="block mt-3 bg-gradient-to-r from-[#fd6402] via-[#fd6402] to-[#fd6402] bg-clip-text text-transparent">
                                 One Standard.
                             </span>
-
                         </h2>
 
-
-                        <div className="w-32 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mt-8" />
-
-
+                        <div className="w-32 h-1 bg-gradient-to-r from-[#fd6402] to-[#fd6402] rounded-full mt-8" />
                         <p className="mt-10 text-gray-400 text-lg leading-8 max-w-2xl">
                             The Stonearc portfolio spans residential, commercial,
                             industrial, and institutional sectors — with projects ranging
@@ -173,21 +159,16 @@ const page = () => {
                             modern construction systems, structural excellence,
                             and long-term client value.
                         </p>
-
-
                     </div>
 
 
                     <div className="relative">
                         <div className="relative rounded-[40px] overflow-hidden border border-white/10 shadow-2xl">
-
                             <img
                                 src="/200project.png"
                                 alt="Construction"
                                 className="w-full h-[650px] object-cover"
                             />
-
-
                             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
 
                         </div>
@@ -202,7 +183,7 @@ const page = () => {
                             className="absolute -left-10 top-12 bg-[#111827] border border-white/10 rounded-3xl px-6 py-5 backdrop-blur-xl shadow-2xl"
                         >
 
-                            <h3 className="text-3xl font-bold text-blue-400">
+                            <h3 className="text-3xl font-bold text-[#fd6402]">
                                 200+
                             </h3>
 
@@ -221,9 +202,6 @@ const page = () => {
                             }}
                             className="absolute -right-10 bottom-16 bg-[#111827] border border-white/10 rounded-3xl px-6 py-5 backdrop-blur-xl shadow-2xl"
                         >
-
-
-
                         </motion.div>
 
 
@@ -233,15 +211,8 @@ const page = () => {
 
             </motion.div>
 
-
-
-
-
             <div className="bg-[#111827] py-28">
-
                 <div className="max-w-7xl mx-auto px-6 md:px-16">
-
-
                     <motion.div
                         initial={{ opacity: 0, y: 80 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -250,7 +221,7 @@ const page = () => {
                         className="text-center mb-24"
                     >
 
-                        <p className="text-blue-400 tracking-[4px] uppercase text-sm">
+                        <p className="text-[#fd6402] tracking-[4px] uppercase text-sm">
                             Project Categories
                         </p>
 
@@ -279,20 +250,13 @@ const page = () => {
                                     transition={{ duration: 0.3 }}
                                     className="bg-[#0B1120] rounded-3xl border border-white/10 overflow-hidden group"
                                 >
-
-
                                     <div className="h-60 overflow-hidden">
                                         <img
                                             src={item.image}
                                             alt={item.title}
                                             className="w-full h-full object-cover group-hover:scale-110 transition-all duration-700"
                                         />
-
-
-
                                     </div>
-
-
                                     <div className="p-8">
 
                                         <h4 className="text-2xl font-semibold mb-4">
@@ -313,7 +277,6 @@ const page = () => {
                         </div>
                     </div>
 
-                    {/* ARCHITECTURE */}
                     <div className="mb-28">
 
                         <h3 className="text-3xl font-bold mb-12">
@@ -330,14 +293,14 @@ const page = () => {
                                         scale: 1.02,
                                     }}
                                     transition={{ duration: 0.3 }}
-                                    className="bg-[#0B1120] p-10 rounded-3xl border border-white/10"
+                                    className="bg-[#ffffff] p-10 rounded-3xl border border-white/10"
                                 >
 
-                                    <h4 className="text-2xl font-semibold mb-5">
+                                    <h4 className="text-black text-2xl font-semibold mb-5">
                                         {item.title}
                                     </h4>
 
-                                    <p className="text-gray-400 leading-7">
+                                    <p className="text-black leading-7">
                                         Complete architectural planning, design
                                         development, approval drawings, and execution
                                         support for premium infrastructure.
@@ -349,9 +312,7 @@ const page = () => {
                         </div>
                     </div>
 
-                    {/* PEB */}
                     <div>
-
                         <h3 className="text-3xl font-bold mb-12">
                             PEB Projects
                         </h3>
@@ -402,7 +363,7 @@ const page = () => {
                 </div>
             </div>
 
-            {/* STATS SECTION */}
+       
             <div className="py-28">
 
                 <div className="max-w-7xl mx-auto px-6 md:px-16">
@@ -415,9 +376,9 @@ const page = () => {
                         className="grid md:grid-cols-2 lg:grid-cols-5 gap-8"
                     >
 
-                        {/* CARD */}
+                      
                         <div className="bg-[#111827] rounded-3xl p-10 text-center border border-white/10">
-                            <h2 className="text-5xl font-bold text-blue-400">
+                            <h2 className="text-5xl font-bold text-[#fd6402]">
                                 <CountUp end={200} duration={3} />+
                             </h2>
 
@@ -426,9 +387,8 @@ const page = () => {
                             </p>
                         </div>
 
-                        {/* CARD */}
                         <div className="bg-[#111827] rounded-3xl p-10 text-center border border-white/10">
-                            <h2 className="text-5xl font-bold text-blue-400">
+                            <h2 className="text-5xl font-bold text-[#fd6402]">
                                 <CountUp end={50} duration={3} />L+
                             </h2>
 
@@ -437,9 +397,8 @@ const page = () => {
                             </p>
                         </div>
 
-                        {/* CARD */}
                         <div className="bg-[#111827] rounded-3xl p-10 text-center border border-white/10">
-                            <h2 className="text-5xl font-bold text-blue-400">
+                            <h2 className="text-5xl font-bold text-[#fd6402]">
                                 <CountUp end={75} duration={3} />+
                             </h2>
 
@@ -448,9 +407,9 @@ const page = () => {
                             </p>
                         </div>
 
-                        {/* CARD */}
+                     
                         <div className="bg-[#111827] rounded-3xl p-10 text-center border border-white/10">
-                            <h2 className="text-5xl font-bold text-blue-400">
+                            <h2 className="text-5xl font-bold text-[#fd6402]">
                                 <CountUp end={60} duration={3} />%
                             </h2>
 
@@ -459,9 +418,9 @@ const page = () => {
                             </p>
                         </div>
 
-                        {/* CARD */}
+                        
                         <div className="bg-[#111827] rounded-3xl p-10 text-center border border-white/10">
-                            <h2 className="text-5xl font-bold text-blue-400">
+                            <h2 className="text-5xl font-bold text-[#fd6402]">
                                 <CountUp end={98} duration={3} />%
                             </h2>
 

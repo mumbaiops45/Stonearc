@@ -36,7 +36,7 @@ const StageCard = ({ stage, index }) => {
       className="relative group"
     >
       {index < processStagess.length - 1 && (
-        <div className="absolute left-[52px] top-full w-[1px] h-10 bg-gradient-to-b from-blue-500/40 to-transparent z-10 hidden lg:block" />
+        <div className="absolute left-[52px] top-full w-[1px] h-10 bg-gradient-to-b from-[#fd6402]/40 to-transparent z-10 hidden lg:block" />
       )}
 
       <div
@@ -60,7 +60,7 @@ const StageCard = ({ stage, index }) => {
 
 
             <div className="flex lg:flex-col items-center lg:items-start gap-5 lg:gap-4 flex-shrink-0 lg:w-24">
-              <div className="w-14 h-14 rounded-2xl border border-blue-500/30 bg-blue-500/10 flex items-center justify-center text-blue-400 text-2xl font-light flex-shrink-0">
+              <div className="w-14 h-14 rounded-2xl border border-[#fd6402]/30 bg-blue-500/10 flex items-center justify-center text-[#fd6402] text-2xl font-light flex-shrink-0">
                 {stage.icon}
               </div>
               <div>
@@ -76,7 +76,7 @@ const StageCard = ({ stage, index }) => {
                 <h3 className="text-2xl lg:text-3xl font-bold text-white leading-tight tracking-[-0.02em]">
                   {stage.title}
                 </h3>
-                <p className="mt-2 text-blue-400/80 text-base font-medium">
+                <p className="mt-2 text-[#fd6402]/80 text-base font-medium">
                   {stage.subtitle}
                 </p>
               </div>
@@ -90,7 +90,7 @@ const StageCard = ({ stage, index }) => {
                   <ul className="space-y-3">
                     {stage.points.map((point, i) => (
                       <li key={i} className="flex items-start gap-3">
-                        <span className="mt-[7px] w-1.5 h-1.5 rounded-full bg-blue-500 flex-shrink-0" />
+                        <span className="mt-[7px] w-1.5 h-1.5 rounded-full bg-[#fd6402] flex-shrink-0" />
                         <span className="text-white/70 text-[15px] leading-7">{point}</span>
                       </li>
                     ))}
@@ -99,13 +99,13 @@ const StageCard = ({ stage, index }) => {
 
 
                 <div className="relative">
-                  <h4 className="text-xs tracking-[4px] uppercase text-blue-400/60 font-semibold mb-5">
+                  <h4 className="text-xs tracking-[4px] uppercase text-[#fd6402]/60 font-semibold mb-5">
                     What You Receive
                   </h4>
                   <div className="relative rounded-2xl border border-blue-500/20 bg-blue-500/[0.06] p-6">
                     <div className="absolute top-0 right-0 w-12 h-12 overflow-hidden rounded-tr-2xl">
-                      <div className="absolute top-0 right-0 w-[1px] h-12 bg-blue-500/40" />
-                      <div className="absolute top-0 right-0 w-12 h-[1px] bg-blue-500/40" />
+                      <div className="absolute top-0 right-0 w-[1px] h-12 bg-[#fd6402]/40" />
+                      <div className="absolute top-0 right-0 w-12 h-[1px] bg-[#fd6402]/40" />
                     </div>
                     <p className="text-white/80 text-[15px] leading-7">
                       {stage.receive}
@@ -176,8 +176,8 @@ const Page = () => {
           >
 
             <motion.div variants={fadeUp} className="flex items-center gap-4 mb-10">
-              <div className="w-10 h-[1px] bg-blue-400" />
-              <span className="text-blue-400 text-xs tracking-[6px] uppercase font-semibold">
+              <div className="w-10 h-[1px] bg-[#fd6402]" />
+              <span className="text-[#fd6402] text-xs tracking-[6px] uppercase font-semibold">
                 Our Process
               </span>
             </motion.div>
@@ -189,8 +189,8 @@ const Page = () => {
             >
               Structured Process.
               <br />
-              <span className="text-transparent bg-clip-text"
-                style={{ backgroundImage: "linear-gradient(135deg, #60a5fa 0%, #93c5fd 50%, #3b82f6 100%)" }}
+              <span className="text-transparent bg-clip-text bg-[#fd6402]"
+                
               >
                 Predictable Delivery.
               </span>
@@ -209,24 +209,18 @@ const Page = () => {
               <motion.button
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
-                className="relative px-8 py-4 rounded-full font-semibold text-white overflow-hidden group"
-                style={{
-                  background: "linear-gradient(135deg, #2563eb, #1d4ed8)",
-                  boxShadow: "0 0 0 1px rgba(59,130,246,0.3), 0 8px 32px rgba(37,99,235,0.3)",
-                }}
+                className="relative px-8 py-4 rounded-full font-semibold text-white bg-[#fd6402] group"
+                
               >
-                <span className="relative z-10">Explore Process</span>
+                <span className="relative z-10 ">Explore Process</span>
                 <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full" />
               </motion.button>
 
               <motion.button
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
-                className="relative px-8 py-4 rounded-full font-semibold text-white overflow-hidden group"
-                style={{
-                  background: "linear-gradient(135deg, #2563eb, #1d4ed8)",
-                  boxShadow: "0 0 0 1px rgba(59,130,246,0.3), 0 8px 32px rgba(37,99,235,0.3)",
-                }}
+                className="relative px-8 py-4 rounded-full font-semibold text-white bg-[#fd6402] group"
+                
               >
                 <span className="relative z-10">Scroll to stages</span>
                 <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full" />
@@ -247,8 +241,8 @@ const Page = () => {
             transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
           >
             <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full border border-blue-500/25 bg-blue-500/8 mb-10">
-              <div className="w-2 h-2 rounded-full bg-blue-400 animate-pulse" />
-              <span className="text-xs tracking-[5px] uppercase text-blue-300 font-semibold">
+              <div className="w-2 h-2 rounded-full bg-[#fd6402] animate-pulse" />
+              <span className="text-xs tracking-[5px] uppercase text-[#fd6402] font-semibold">
                 Process Overview
               </span>
             </div>
@@ -256,14 +250,12 @@ const Page = () => {
             <h2 className="text-4xl md:text-5xl font-bold leading-[1.15] tracking-[-0.03em]">
               From Brief
               <span
-                className="block mt-2 text-transparent bg-clip-text"
-                style={{ backgroundImage: "linear-gradient(135deg, #60a5fa, #3b82f6)" }}
-              >
+                className="block mt-2 text-transparent bg-clip-text bg-[#fd6402]">
                 To Handover
               </span>
             </h2>
 
-            <div className="w-16 h-[2px] bg-blue-500 rounded-full mt-8 mb-10" />
+            <div className="w-16 h-[2px] bg-[#fd6402] rounded-full mt-8 mb-10" />
 
             <div className="space-y-5" >
               <p className="text-white text-lg leading-8">
@@ -317,7 +309,7 @@ const Page = () => {
               transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
               className="absolute -left-8 top-10 bg-[#0d1628] border border-blue-500/25 rounded-2xl px-6 py-5 shadow-2xl shadow-blue-950/50"
             >
-              <div className="text-4xl font-bold text-blue-400 tracking-tight">5</div>
+              <div className="text-4xl font-bold text-[#fd6402] tracking-tight">5</div>
               <div className="text-white text-sm mt-0.5" >
                 Defined Stages
               </div>
@@ -346,8 +338,8 @@ const Page = () => {
     >
       <div className="max-w-2xl">
         <div className="flex items-center gap-3 mb-5 md:mb-6">
-          <div className="w-10 h-[1px] bg-blue-500" />
-          <p className="text-blue-400 text-[10px] sm:text-xs tracking-[0.35em] uppercase font-semibold">
+          <div className="w-10 h-[1px] bg-[#fd6402]" />
+          <p className="text-[#fd6402] text-[10px] sm:text-xs tracking-[0.35em] uppercase font-semibold">
             Project Workflow
           </p>
         </div>
@@ -434,7 +426,7 @@ const Page = () => {
                     key={item}
                     className="flex items-center gap-2 px-5 py-2.5 rounded-full border border-white/10 bg-white/5"
                   >
-                    <span className="w-1.5 h-1.5 rounded-full bg-blue-400 flex-shrink-0" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#fd6402] flex-shrink-0" />
                     <span className="text-white text-sm">{item}</span>
                   </div>
                 ))}

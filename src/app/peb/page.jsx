@@ -20,26 +20,26 @@ const Page = () => {
                 <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-16 h-full flex items-center">
                     <div>
                         <div className="inline-flex items-center gap-3 mb-5 animate-fadeUp">
-                            <div className="w-12 h-px bg-blue-500" />
+                            <div className="w-12 h-px bg-[#fd6402]" />
 
-                            <span className="text-blue-400 tracking-[6px] font-semibold text-sm uppercase">
+                            <span className="text-[#fd6402] tracking-[6px] font-semibold text-sm uppercase">
                                 WHAT WE BUILD WITH PEB
                             </span>
-                            <div className="w-12 h-px bg-blue-500" />
+                            <div className="w-12 h-px bg-[#fd6402]" />
                         </div>
                         <h1 className="text-3xl md:text-4xl lg:text-4xl font-bold text-white leading-tight animate-fadeUp">
                             Pre-Engineered Buildings (PEB) <br />
                         </h1>
                         <p className='text-white'>Steel. Speed. Strength. The future of large-span construction is already here.</p>
                         
-                        <div className="absolute bottom-10 right-10 w-24 h-1 bg-blue-500 rounded-full" />
+                        <div className="absolute bottom-10 right-10 w-24 h-1 bg-[#fd6402] rounded-full" />
                     </div>
                 </div>
             </div>
 
 
             <div className=" px-16 py-16 gap-12 mb-14 animate-on-scroll">
-                <h2 className="text-2xl font-semibold mb-4 border-l-4 border-blue-400 pl-4">
+                <h2 className="text-2xl font-semibold mb-4 border-l-4 border-[#fd6402] pl-4">
                     What is a Pre-Engineered Building?
                 </h2>
 
@@ -53,7 +53,7 @@ const Page = () => {
             <div className="px-6 lg:px-20 mb-20">
                 <div className="text-center mb-10">
                     <h2 className="text-3xl font-bold">Why PEB is the Smarter Choice</h2>
-                    <div className="w-24 h-[3px] bg-blue-400 mx-auto mt-3 rounded-full"></div>
+                    <div className="w-24 h-[3px] bg-[#fd6402] mx-auto mt-3 rounded-full"></div>
                 </div>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -70,11 +70,11 @@ const Page = () => {
                     ].map((item, i) => (
                         <div
                             key={i}
-                            className="group bg-[#14367e] border border-white/10 rounded-2xl p-6 hover:border-blue-400/40 hover:shadow-lg hover:shadow-blue-500/10 transition"
+                            className="group bg-[#ffffff] border border-white/10 rounded-2xl p-6 hover:border-blue-400/40 hover:shadow-lg hover:shadow-blue-500/10 transition"
                         >
-                            <h3 className="text-white font-semibold mb-2">{item[0]}</h3>
-                            <p className="text-white text-sm">{item[1]}</p>
-                            <div className="w-0 group-hover:w-full h-[2px] bg-blue-400 mt-4 transition-all duration-500 rounded-full"></div>
+                            <h3 className="text-black font-semibold mb-2">{item[0]}</h3>
+                            <p className="text-black text-sm">{item[1]}</p>
+                            <div className="w-0 group-hover:w-full h-[2px] bg-[#fd6402] mt-4 transition-all duration-500 rounded-full"></div>
                         </div>
                     ))}
                 </div>
@@ -84,7 +84,7 @@ const Page = () => {
             <div className="px-6 lg:px-20 mb-20">
                 <div className="text-center mb-10">
                     <h2 className="text-3xl font-bold">What We Build With PEB</h2>
-                    <div className="w-24 h-[3px] bg-blue-400 mx-auto mt-3 rounded-full"></div>
+                    <div className="w-24 h-[3px] bg-[#fd6402] mx-auto mt-3 rounded-full"></div>
                 </div>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -99,11 +99,11 @@ const Page = () => {
                     ].map((item, i) => (
                         <div
                             key={i}
-                            className=" group bg-[#14367e] border border-white/10 rounded-2xl p-6 hover:border-blue-400/40 transition"
+                            className=" group bg-[#ffffff] border border-white/10 rounded-2xl p-6 hover:border-blue-400/40 transition"
                         >
-                            <h3 className="text-white font-semibold mb-2">{item[0]}</h3>
-                            <p className="text-white text-sm">{item[1]}</p>
-                            <div className="w-0 group-hover:w-full h-[2px] bg-blue-400 mt-4 transition-all duration-500 rounded-full"></div>
+                            <h3 className="text-black font-semibold mb-2">{item[0]}</h3>
+                            <p className="text-black text-sm">{item[1]}</p>
+                            <div className="w-0 group-hover:w-full h-[2px] bg-[#fd6402] mt-4 transition-all duration-500 rounded-full"></div>
                         </div>
 
                     ))}
@@ -119,7 +119,7 @@ const Page = () => {
                     <h2 className="text-3xl md:text-4xl font-bold">
                         Our PEB Process
                     </h2>
-                    <div className="w-24 h-[3px] bg-blue-400 mx-auto mt-4 rounded-full" />
+                    <div className="w-24 h-[3px] bg-[#fd6402] mx-auto mt-4 rounded-full" />
                     <p className="text-gray-300 mt-5 max-w-2xl mx-auto text-sm">
                         A structured, engineering-led workflow ensuring precision from concept to handover.
                     </p>
@@ -136,9 +136,7 @@ const Page = () => {
                                 onMouseEnter={() => setActiveImage(item.image)}
                                 className="mb-10 relative group cursor-pointer"
                             >
-
-
-                                <div className="absolute -left-[42px] top-1 w-7 h-7 rounded-full bg-blue-400 text-black text-xs font-bold flex items-center justify-center shadow-md">
+                                <div className="absolute -left-[42px] top-1 w-7 h-7 rounded-full bg-[#fd6402] text-black text-xs font-bold flex items-center justify-center shadow-md">
                                     {item.phase}
                                 </div>
 
@@ -155,7 +153,7 @@ const Page = () => {
                                     </p>
 
 
-                                    <div className="w-0 group-hover:w-full h-[2px] bg-blue-400 mt-4 transition-all duration-500 rounded-full"></div>
+                                    <div className="w-0 group-hover:w-full h-[2px] bg-[#fd6402] mt-4 transition-all duration-500 rounded-full"></div>
                                 </div>
 
                             </div>
@@ -188,7 +186,7 @@ const Page = () => {
 
                 <div className="text-center mb-10">
                     <h2 className="text-3xl font-bold">Technical Specifications</h2>
-                    <div className="w-24 h-[3px] bg-blue-400 mx-auto mt-3 rounded-full"></div>
+                    <div className="w-24 h-[3px] bg-[#fd6402] mx-auto mt-3 rounded-full"></div>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-6">
@@ -204,10 +202,10 @@ const Page = () => {
                     ].map((item, i) => (
                         <div
                             key={i}
-                            className="bg-[#14367e] border border-white/10 rounded-2xl p-6 hover:border-blue-400/40 transition"
+                            className="bg-[#ffffff] border border-white/10 rounded-2xl p-6 hover:border-blue-400/40 transition"
                         >
-                            <h3 className="text-white font-semibold mb-2">{item[0]}</h3>
-                            <p className="text-white text-sm">{item[1]}</p>
+                            <h3 className="text-black font-semibold mb-2">{item[0]}</h3>
+                            <p className="text-black text-sm">{item[1]}</p>
                         </div>
                     ))}
                 </div>

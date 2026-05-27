@@ -65,7 +65,7 @@ export default function Navbar() {
                   <img
                     src="/logo.png"
                     alt="StoneArc Logo"
-                    className="h-20 w-20 object-contain transition duration-300 group-hover:scale-105"
+                    className="h-20 w-20 object-contain transition  duration-300 group-hover:scale-105"
                   />
                 </Link>
               </div>

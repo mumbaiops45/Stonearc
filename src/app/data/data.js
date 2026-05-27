@@ -104,7 +104,7 @@ export const values = [
         title: "Accountability",
         content:
             "Problems are identified, owned, and resolved — never hidden.",
-        image: "/accountabilty.jpg",
+        image: "/accountablity.jpg",
     },
 ]
 

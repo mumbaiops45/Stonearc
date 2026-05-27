@@ -50,11 +50,11 @@ const page = () => {
                 <div className="relative z-10 w-full min-h-[100svh] flex items-center px-5 sm:px-8 md:px-12 lg:px-16 py-24">
                     <div className="max-w-2xl">
                         <div className="inline-flex items-center gap-2 sm:gap-3 mb-5">
-                            <div className="w-8 sm:w-12 h-px bg-blue-500" />
-                            <span className="text-blue-400 tracking-[3px] sm:tracking-[6px] font-semibold text-[10px] sm:text-sm uppercase">
+                            <div className="w-8 sm:w-12 h-px bg-[#fd6402]" />
+                            <span className="text-[#fd6402] tracking-[3px] sm:tracking-[6px] font-semibold text-[10px] sm:text-sm uppercase">
                                 Construction Services
                             </span>
-                            <div className="w-8 sm:w-12 h-px bg-blue-500" />
+                            <div className="w-8 sm:w-12 h-px bg-[#fd6402]" />
                         </div>
                         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
                             Architecture Services
@@ -62,7 +62,7 @@ const page = () => {
                         <p className="text-white/80 text-sm sm:text-base mt-3 leading-relaxed">
                             Design that thinks like an engineer. Engineering that respects design.
                         </p>
-                        <div className="w-20 sm:w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mt-6 rounded-full" />
+                        <div className="w-20 sm:w-24 h-1 bg-gradient-to-r from-[#fd6402] to-[#fd6402] mt-6 rounded-full" />
                     </div>
                 </div>
             </div>
@@ -70,7 +70,7 @@ const page = () => {
             <div className="grid lg:grid-cols-2 px-5 sm:px-8 md:px-10 lg:px-16 py-12 sm:py-16 gap-8 sm:gap-12 mb-0 animate-on-scroll">
                 <div className="space-y-5 sm:space-y-6">
                     <div>
-                        <span className="text-blue-400 text-xs sm:text-sm font-semibold uppercase tracking-wider">
+                        <span className="text-[#fd6402] text-xs sm:text-sm font-semibold uppercase tracking-wider">
                             OVERVIEW
                         </span>
                         <h2 className="text-2xl sm:text-3xl font-bold mt-3 text-white leading-snug">
@@ -80,8 +80,8 @@ const page = () => {
                     <p className="text-slate-300 leading-relaxed text-sm sm:text-base lg:text-lg">
                         Great architecture is not just about what looks good on a render. It is about what works when it is built — structurally sound, spatially intelligent, compliant with regulations, and functional for the people who use it every day.
                     </p>
-                    <div className="bg-blue-500/10 border border-blue-500/20 rounded-2xl p-5 sm:p-6">
-                        <p className="text-slate-200 leading-relaxed italic text-sm sm:text-base">
+                    <div className="bg-white border border-blue-500/20 rounded-2xl p-5 sm:p-6">
+                        <p className="leading-relaxed italic text-sm sm:text-base">
                             The Stonearc architecture team brings together licensed architects and structural engineers who collaborate from the first sketch. This means our designs are not aspirational exercises — they are engineered from the beginning to be built efficiently and stand permanently.
                         </p>
                     </div>
@@ -102,7 +102,7 @@ const page = () => {
                     <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white leading-snug">
                         What Our Architecture Team Delivers
                     </h2>
-                    <div className="w-24 h-[3px] bg-blue-400 mx-auto mt-4 rounded-full" />
+                    <div className="w-24 h-[3px] bg-[#fd6402] mx-auto mt-4 rounded-full" />
                     <p className="text-gray-400 mt-5 max-w-3xl mx-auto text-sm sm:text-base leading-relaxed">
                         We begin every project with a deep understanding of your brief — the function of the building, the people who will use it, the site constraints, the budget, and your long-term intentions. From this foundation, we develop concept schemes that translate vision into spatial strategy.
                     </p>
@@ -137,7 +137,7 @@ const page = () => {
                             </div>
                             <div className="absolute bottom-0 left-0 w-full p-5 sm:p-6 bg-gradient-to-t from-black/95 via-black/80 to-transparent">
                                 <h4 className="text-white text-lg sm:text-2xl font-semibold">{card.title}</h4>
-                                <div className="w-0 group-hover:w-24 h-[2px] bg-blue-400 mt-3 mb-3 transition-all duration-500" />
+                                <div className="w-0 group-hover:w-24 h-[2px] bg-[#fd6402] mt-3 mb-3 transition-all duration-500" />
                                 <p className="text-gray-300 text-xs sm:text-sm leading-relaxed opacity-0 translate-y-5 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
                                     {card.desc}
                                 </p>
@@ -152,7 +152,7 @@ const page = () => {
                     <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">
                         Architectural Working Drawings
                     </h2>
-                    <div className="w-24 h-[3px] bg-blue-400 mx-auto mt-4 rounded-full" />
+                    <div className="w-24 h-[3px] bg-[#fd6402] mx-auto mt-4 rounded-full" />
                     <p className="text-gray-400 mt-5 max-w-3xl mx-auto text-sm sm:text-base leading-relaxed">
                         Once the design direction is established, we produce the full set of working drawings required for construction — coordinated with structural and MEP disciplines to ensure buildability and compliance.
                     </p>
@@ -163,7 +163,7 @@ const page = () => {
                     <button
                         onClick={scrollLeft}
                         aria-label="Scroll left"
-                        className="absolute left-0 md:-left-5 top-1/2 -translate-y-1/2 z-10 bg-blue-500 hover:bg-blue-600 text-white p-2 sm:p-3 rounded-full shadow-lg transition-colors"
+                        className="absolute left-0 md:-left-5 top-1/2 -translate-y-1/2 z-10 bg-[#fd6402] hover:bg-[#fd6402] text-white p-2 sm:p-3 rounded-full shadow-lg transition-colors"
                     >
                         <ChevronLeft size={20} />
                     </button>
@@ -171,7 +171,7 @@ const page = () => {
                     <button
                         onClick={scrollRight}
                         aria-label="Scroll right"
-                        className="absolute right-0 md:-right-5 top-1/2 -translate-y-1/2 z-10 bg-blue-500 hover:bg-blue-600 text-white p-2 sm:p-3 rounded-full shadow-lg transition-colors"
+                        className="absolute right-0 md:-right-5 top-1/2 -translate-y-1/2 z-10 bg-[#fd6402] hover:bg-[#fd6402] text-white p-2 sm:p-3 rounded-full shadow-lg transition-colors"
                     >
                         <ChevronRight size={20} />
                     </button>
@@ -185,14 +185,14 @@ const page = () => {
                             <div
                                 key={index}
                                 style={{ scrollSnapAlign: 'start' }}
-                                className="group relative flex-shrink-0 w-[78vw] sm:w-[44vw] md:w-[31vw] lg:w-[23vw] max-w-[300px] rounded-2xl overflow-hidden h-[380px] sm:h-[420px] border border-white/10 bg-[#111827] hover:border-blue-400/40 transition-all duration-500 shadow-xl hover:shadow-blue-500/10"
+                                className="group relative flex-shrink-0 w-[78vw] sm:w-[44vw] md:w-[31vw] lg:w-[23vw] max-w-[300px] rounded-2xl overflow-hidden h-[380px] sm:h-[420px] border border-white/10 bg-[#111827] hover:border-[#fd6402]/40 transition-all duration-500 shadow-xl hover:shadow-blue-500/10"
                             >
                                 <div className="h-[55%] w-full overflow-hidden">
                                     <img src={card.img} alt={card.title} className="w-full h-full object-cover object-top group-hover:scale-105 transition-all duration-700" />
                                 </div>
                                 <div className="absolute bottom-0 left-0 w-full p-5 sm:p-6 bg-gradient-to-t from-black/95 via-black/80 to-transparent">
                                     <h4 className="text-white text-base sm:text-xl font-semibold">{card.title}</h4>
-                                    <div className="w-0 group-hover:w-24 h-[2px] bg-blue-400 mt-3 mb-3 transition-all duration-500" />
+                                    <div className="w-0 group-hover:w-24 h-[2px] bg-[#fd6402] mt-3 mb-3 transition-all duration-500" />
                                     <p className="text-gray-300 text-xs sm:text-sm leading-relaxed opacity-0 translate-y-5 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
                                         {card.desc}
                                     </p>
@@ -209,7 +209,7 @@ const page = () => {
                     <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-wide leading-snug">
                         Regulatory Approvals & Compliance
                     </h2>
-                    <div className="w-28 h-[3px] bg-blue-400 mx-auto mt-4 rounded-full" />
+                    <div className="w-28 h-[3px] bg-[#fd6402] mx-auto mt-4 rounded-full" />
                     <p className="text-gray-400 mt-5 sm:mt-6 max-w-3xl mx-auto leading-relaxed text-sm sm:text-base">
                         Stonearc manages the full approval process — from plan sanction applications to occupancy certificates.
                         Our team is experienced with municipal and panchayat approvals, RERA compliance, fire NOC procedures,
@@ -225,11 +225,11 @@ const page = () => {
                         { title: "Environmental Clearance", desc: "Support for environmental permissions and required statutory approvals." },
                         { title: "Occupancy Certificate",   desc: "Final documentation and coordination for occupancy certificate approval." },
                     ].map((item, i) => (
-                        <div key={i} className="group relative bg-[#14367e] border border-white/10 rounded-2xl p-5 sm:p-6 hover:border-blue-400/40 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-500 overflow-hidden">
+                        <div key={i} className="group relative bg-[#fdfdfd] border border-white/10 rounded-2xl p-5 sm:p-6 hover:border-blue-400/40 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-500 overflow-hidden">
                             <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/10 to-transparent opacity-0 group-hover:opacity-100 transition duration-500" />
-                            <h3 className="text-white text-base sm:text-lg font-semibold mb-2">{item.title}</h3>
-                            <p className="text-white/80 text-xs sm:text-sm leading-relaxed">{item.desc}</p>
-                            <div className="w-0 group-hover:w-full h-[2px] bg-blue-400 mt-4 transition-all duration-500 rounded-full" />
+                            <h3 className=" text-base sm:text-lg font-semibold mb-2">{item.title}</h3>
+                            <p className=" text-xs sm:text-sm leading-relaxed">{item.desc}</p>
+                            <div className="w-0 group-hover:w-full h-[2px] bg-[#fd6402] mt-4 transition-all duration-500 rounded-full" />
                         </div>
                     ))}
                 </div>
@@ -249,14 +249,14 @@ const page = () => {
                             desc: "We provide architectural services for renovation, refurbishment, and adaptive reuse of existing buildings — from structural assessment and design development to complete drawing sets for new functional use."
                         },
                     ].map((item, i) => (
-                        <div key={i} className="group relative bg-[#14367e] border border-white/10 rounded-2xl p-6 sm:p-8 hover:border-blue-400/40 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-500 overflow-hidden">
+                        <div key={i} className="group relative bg-[#fdfdfd] border border-white/10 rounded-2xl p-6 sm:p-8 hover:border-blue-400/40 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-500 overflow-hidden">
                             <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/10 to-transparent opacity-0 group-hover:opacity-100 transition duration-500" />
                             <div className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-xl bg-[#0f172a] border border-white/10 mb-5 sm:mb-6">
                                 <span className="text-blue-400 text-lg sm:text-xl">{item.icon}</span>
                             </div>
-                            <h4 className="text-white text-lg sm:text-xl font-semibold mb-3">{item.title}</h4>
-                            <p className="text-white/80 text-xs sm:text-sm leading-relaxed">{item.desc}</p>
-                            <div className="w-0 group-hover:w-full h-[2px] bg-blue-400 mt-5 sm:mt-6 transition-all duration-500 rounded-full" />
+                            <h4 className=" text-lg sm:text-xl font-semibold mb-3">{item.title}</h4>
+                            <p className=" text-xs sm:text-sm leading-relaxed">{item.desc}</p>
+                            <div className="w-0 group-hover:w-full h-[2px] bg-[#fd6402] mt-5 sm:mt-6 transition-all duration-500 rounded-full" />
                         </div>
                     ))}
                 </div>
@@ -268,7 +268,7 @@ const page = () => {
                     <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-wide">
                         Design Philosophy
                     </h2>
-                    <div className="w-28 h-[3px] bg-blue-400 mx-auto mt-4 rounded-full" />
+                    <div className="w-28 h-[3px] bg-[#fd6402] mx-auto mt-4 rounded-full" />
                     <p className="text-gray-400 mt-5 sm:mt-6 max-w-3xl mx-auto text-sm sm:text-base leading-relaxed">
                         How we think about architecture, structure, and design decisions at Stonearc.
                     </p>
@@ -282,9 +282,9 @@ const page = () => {
                         "The building must serve its users — not just impress them",
                         "Details matter — a well-resolved detail is the difference between a good building and a great one",
                     ].map((item, i) => (
-                        <div key={i} className="group bg-[#14367e] border border-white/10 rounded-2xl p-5 sm:p-6 hover:border-blue-400/40 hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-500">
-                            <p className="text-gray-300 text-xs sm:text-sm leading-relaxed">{item}</p>
-                            <div className="w-0 group-hover:w-full h-[2px] bg-blue-400 mt-4 transition-all duration-500 rounded-full" />
+                        <div key={i} className="group bg-[#fefefe] border border-white/10 rounded-2xl p-5 sm:p-6 hover:border-blue-400/40 hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-500">
+                            <p className=" text-xs sm:text-sm leading-relaxed">{item}</p>
+                            <div className="w-0 group-hover:w-full h-[2px] bg-[#fd6402] mt-4 transition-all duration-500 rounded-full" />
                         </div>
                     ))}
                 </div>
@@ -301,7 +301,7 @@ const page = () => {
                     <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-wide">
                         Project Types
                     </h2>
-                    <div className="w-28 h-[3px] bg-blue-400 mx-auto mt-4 rounded-full" />
+                    <div className="w-28 h-[3px] bg-[#fd6402] mx-auto mt-4 rounded-full" />
                     <p className="text-gray-400 mt-5 sm:mt-6 max-w-3xl mx-auto text-sm sm:text-base leading-relaxed">
                         Architecture projects we handle across multiple sectors and scales.
                     </p>
@@ -315,10 +315,10 @@ const page = () => {
                         { sector: "Institutional", types: "Schools, colleges, hospitals, government and civic buildings" },
                         { sector: "Renovation",    types: "Building upgrades, adaptive reuse, structural modifications" },
                     ].map((item, i) => (
-                        <div key={i} className="group bg-[#14367e] border border-white/10 rounded-2xl p-5 sm:p-6 hover:border-blue-400/40 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-500">
-                            <h4 className="text-white text-base sm:text-lg font-semibold mb-2 sm:mb-3">{item.sector}</h4>
-                            <p className="text-white/80 text-xs sm:text-sm leading-relaxed">{item.types}</p>
-                            <div className="w-0 group-hover:w-full h-[2px] bg-blue-400 mt-4 sm:mt-5 transition-all duration-500 rounded-full" />
+                        <div key={i} className="group bg-[#fff] border border-white/10 rounded-2xl p-5 sm:p-6 hover:border-blue-400/40 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-500">
+                            <h4 className=" text-base sm:text-lg font-semibold mb-2 sm:mb-3">{item.sector}</h4>
+                            <p className=" text-xs sm:text-sm leading-relaxed">{item.types}</p>
+                            <div className="w-0 group-hover:w-full h-[2px] bg-[#fd6402] mt-4 sm:mt-5 transition-all duration-500 rounded-full" />
                         </div>
                     ))}
                 </div>

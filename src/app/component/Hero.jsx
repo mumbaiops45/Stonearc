@@ -71,15 +71,15 @@ const Hero = () => {
 
 
               <div className="mb-6 flex items-center gap-3">
-                <div className="h-[2px] w-10 sm:w-14 bg-blue-500" />
+                <div className="h-[2px] w-10 sm:w-14 bg-amber-500" />
 
-                <span className="text-[10px] sm:text-xs md:text-sm font-semibold uppercase tracking-[5px] sm:tracking-[8px] text-blue-400">
+                <span className="text-[10px] sm:text-xs md:text-sm font-semibold uppercase tracking-[5px] sm:tracking-[8px] text-amber-400">
                   {currentContent.span}
                 </span>
               </div>
 
 
-              <h1 className="mb-6 text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl md:text-4xl lg:text-4xl xl:text-7xl">
+              <h1 className="mb-6 text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl md:text-4xl lg:text-4xl xl:text-4xl">
                 {currentContent.heading}
               </h1>
 
@@ -91,13 +91,13 @@ const Hero = () => {
 
               <div className="flex flex-col gap-4 sm:flex-row">
 
-                <button className="group relative overflow-hidden rounded-full bg-blue-600 px-8 py-4 text-sm sm:text-base font-semibold text-white shadow-2xl transition-all duration-300 hover:scale-105 hover:bg-blue-700">
+                <button className="group relative overflow-hidden rounded-full bg-amber-600 px-8 py-4 text-sm sm:text-base font-semibold text-white shadow-2xl transition-all duration-300 hover:scale-105 hover:bg-amber-700">
 
                   <span className="relative z-10">
                     Get a Free Estimate
                   </span>
 
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-indigo-600 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-amber-600 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                 </button>
 
 
@@ -126,7 +126,7 @@ const Hero = () => {
             onClick={() => setCurrentImage(index)}
             className={`rounded-full transition-all duration-300 ${
               index === currentImage
-                ? "h-1.5 w-10 bg-blue-500 sm:w-14"
+                ? "h-1.5 w-10 bg-amber-500 sm:w-14"
                 : "h-1.5 w-5 bg-white/40 hover:bg-white/70 sm:w-7"
             }`}
           />

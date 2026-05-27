@@ -38,9 +38,9 @@ const Page = () => {
     return (
         <section>
             <div className="relative w-full min-h-[100svh] overflow-hidden">
-                 <div className="absolute inset-0 "
-                 style={{ transform: `translateY(${heroParallax}px) scale(1.1)`}}
-                 >
+                <div className="absolute inset-0 "
+                    style={{ transform: `translateY(${heroParallax}px) scale(1.1)` }}
+                >
                     <img
                         src="/about.jpg"
                         alt="About"
@@ -121,24 +121,25 @@ const Page = () => {
         }
       `}</style>
             </div>
-            <div className="w-full min-h-screen bg-[#0f172a] text-white px-6 md:px-16 py-20 flex flex-col lg:flex-row items-center justify-between gap-14 overflow-hidden">
+            
+            <div className="w-full min-h-screen  px-6 md:px-16 py-35 flex flex-col lg:flex-row items-center justify-between gap-14 overflow-hidden">
                 <div className="lg:w-1/2 space-y-6 z-10">
                     <button className="border border-white/30 bg-white/10 backdrop-blur-md px-5 py-2 rounded-full text-sm tracking-[4px] uppercase hover:bg-white hover:text-black transition-all duration-500 shadow-lg">
                         WHO WE ARE
                     </button>
                     <h3 className="text-3xl md:text-4xl font-bold leading-tight">
                         A Company Built on <br />
-                        <span className="text-blue-400">Engineering Principles</span>
+                        <span className="text-[#fd6402]">Engineering Principles</span>
                     </h3>
-                    <div className="w-28 h-[3px] bg-blue-400 rounded-full"></div>
+                    <div className="w-28 h-[3px] bg-[#fd6402] rounded-full"></div>
 
-                    <p className="text-gray-300 text-md leading-relaxed max-w-2xl">
+                    <p className="text-black text-md leading-relaxed max-w-2xl">
                         Stonearc Engineers was founded on a simple but powerful belief:
                         that great construction is not just about what you build,
                         but how you build it.
                     </p>
 
-                    <p className="text-gray-300 text-md leading-relaxed max-w-2xl">
+                    <p className="text-black text-md leading-relaxed max-w-2xl">
                         Over 15 years of operation, we have grown from a civil
                         construction firm into a full-spectrum engineering company —
                         offering construction, architecture, and PEB solutions to
@@ -146,7 +147,7 @@ const Page = () => {
                         and industrial sectors.
                     </p>
 
-                    <p className="text-gray-300 text-md leading-relaxed max-w-2xl">
+                    <p className="text-black text-md leading-relaxed max-w-2xl">
                         We are a team of licensed structural engineers, experienced
                         architects, certified PEB fabricators, and disciplined site
                         managers who work together under one roof and one standard —
@@ -156,11 +157,11 @@ const Page = () => {
 
                 <div className="lg:w-1/2 relative flex justify-center">
                     <div className="absolute -inset-4 bg-blue-500/20 blur-3xl rounded-3xl"></div>
-                     <div className="relative overflow-hidden rounded-3xl shadow-2xl group max-w-[600px]"
-                     style={{
-                        transform: `translateY(${sectionParallax}px)`
-                     }}
-                     >
+                    <div className="relative overflow-hidden rounded-3xl shadow-2xl group max-w-[600px]"
+                        style={{
+                            transform: `translateY(${sectionParallax}px)`
+                        }}
+                    >
 
                         <img
                             src="/who.jpg"
@@ -184,11 +185,11 @@ const Page = () => {
 
 
             <div className="relative w-full bg-[#0b1120] overflow-hidden py-24 px-6 md:px-16">
-                 <div className="absolute top-0 left-0 w-96 h-96 bg-blue-500/10 blur-3xl rounded-full"
-                 style={{
-                    transform: `translateY(${heroParallax * 0.5})`
-                 }}
-                 />
+                <div className="absolute top-0 left-0 w-96 h-96 bg-blue-500/10 blur-3xl rounded-full"
+                    style={{
+                        transform: `translateY(${heroParallax * 0.5})`
+                    }}
+                />
                 <div className="absolute bottom-0 right-0 w-96 h-96 bg-cyan-400/10 blur-3xl rounded-full"></div>
 
                 <div className="relative z-10 grid lg:grid-cols-2 gap-16 items-center">
@@ -196,11 +197,11 @@ const Page = () => {
                     <div className="relative group">
 
 
-                          <div className="overflow-hidden rounded-[30px] shadow-2xl"
-                          style={{
-                            transform: `translateY(${slowParallax})`
-                          }}
-                          >
+                        <div className="overflow-hidden rounded-[30px] shadow-2xl"
+                            style={{
+                                transform: `translateY(${slowParallax})`
+                            }}
+                        >
                             <img
                                 src="/imgsrc.jpg"
                                 alt="Our Story"
@@ -222,12 +223,12 @@ const Page = () => {
                         <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-6">
                             Where We Came From.
                             <br />
-                            <span className="text-blue-400">
+                            <span className="text-[#fd6402]">
                                 Where We Are Going.
                             </span>
                         </h2>
-                        <div className="w-24 h-[3px] bg-blue-400 rounded-full mb-8"></div>
-                        <div className="space-y-6 text-gray-300 text-md leading-relaxed">
+                        <div className="w-24 h-[3px] bg-[#fd6402] rounded-full mb-8"></div>
+                        <div className="space-y-6  text-gray-300 text-md leading-relaxed">
 
                             <p>
                                 Stonearc Engineers began with a commitment to doing
@@ -262,66 +263,61 @@ const Page = () => {
             </div>
 
 
-            <div className="relative bg-[#0b1120] py-24 px-6 md:px-16 overflow-hidden">
+
+            <div className="relative py-24 px-6 md:px-16  overflow-hidden">
                 <div className="absolute top-0 left-0 w-72 h-72 bg-blue-500/10 blur-3xl rounded-full"></div>
                 <div className="absolute bottom-0 right-0 w-72 h-72 bg-cyan-400/10 blur-3xl rounded-full"></div>
-
                 <div className="relative z-10 max-w-7xl mx-auto">
 
-
-                    <button className="border border-white/20 bg-white/10 backdrop-blur-md px-5 py-2 rounded-full text-sm tracking-[4px] uppercase text-white mb-10 hover:bg-white hover:text-black transition duration-500">
+                    <button className="border border-white/20 bg-white/10 backdrop-blur-md px-5 py-2 rounded-full text-sm tracking-[4px] uppercase text-black mb-10 hover:bg-white hover:text-black transition duration-500">
                         MISSION AND VISION
                     </button>
 
-
                     <div className="grid md:grid-cols-2 gap-10">
 
-                        <div className="group relative bg-white/5 border border-white/10 backdrop-blur-xl rounded-3xl p-10 hover:border-blue-400/40 transition duration-500 overflow-hidden">
+
+                        <div className="group relative bg-gray-200 rounded-3xl p-[2px]">
 
 
-                            <div className="absolute inset-0 bg-blue-500/5 opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                            <div className="absolute inset-0 rounded-3xl border-2 border-amber-500 opacity-0 group-hover:opacity-100  transition-all duration-500"></div>
 
+                            <div className="relative bg-white/5 border border-white/10 backdrop-blur-xl rounded-3xl p-10 transition duration-500 group-hover:bg-white/10">
 
-                            <div className="text-7xl font-bold text-white/10 absolute top-5 right-6">
-                                01
+                                <h2 className="text-4xl font-bold text-[#fd6402] mb-6">
+                                    Our Mission
+                                </h2>
+
+                                <div className="w-20 h-[3px] bg-[#fd6402] rounded-full mb-6"></div>
+
+                                <p className="text-black text-md leading-relaxed">
+                                    To deliver construction, architecture, and PEB projects
+                                    that meet the highest standards of structural safety,
+                                    design quality, and project discipline — on time and
+                                    within budget — every single time.
+                                </p>
                             </div>
-
-                            <h2 className="text-4xl font-bold text-white mb-6 relative z-10">
-                                Our Mission
-                            </h2>
-
-                            <div className="w-20 h-[3px] bg-blue-400 rounded-full mb-6 relative z-10"></div>
-
-                            <p className="text-gray-300 text-md leading-relaxed relative z-10">
-                                To deliver construction, architecture, and PEB projects
-                                that meet the highest standards of structural safety,
-                                design quality, and project discipline — on time and
-                                within budget — every single time.
-                            </p>
                         </div>
 
 
-                        <div className="group relative bg-white/5 border border-white/10 backdrop-blur-xl rounded-3xl p-10 hover:border-cyan-400/40 transition duration-500 overflow-hidden">
+                        <div className="group relative rounded-3xl bg-gray-200 p-[2px]">
 
 
-                            <div className="absolute inset-0 bg-cyan-400/5 opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                            <div className="absolute inset-0 rounded-3xl border-2 border-amber-500 opacity-0 group-hover:opacity-100  transition-all duration-500"></div>
 
+                            <div className="relative bg-white/5 border  border-white/10 backdrop-blur-xl rounded-3xl p-10 transition duration-500 group-hover:bg-white/10">
 
-                            <div className="text-7xl font-bold text-white/10 absolute top-5 right-6">
-                                02
+                                <h2 className="text-4xl font-bold text-[#fd6402] mb-6">
+                                    Our Vision
+                                </h2>
+
+                                <div className="w-20 h-[3px] bg-[#fd6402] rounded-full mb-6"></div>
+
+                                <p className="text-black  text-md leading-relaxed">
+                                    To be the benchmark engineering firm that clients
+                                    recommend without being asked, because we always
+                                    deliver more than we promise.
+                                </p>
                             </div>
-
-                            <h2 className="text-4xl font-bold text-white mb-6 relative z-10">
-                                Our Vision
-                            </h2>
-
-                            <div className="w-20 h-[3px] bg-cyan-400 rounded-full mb-6 relative z-10"></div>
-
-                            <p className="text-gray-300 text-md leading-relaxed relative z-10">
-                                To be the benchmark engineering firm that clients
-                                recommend without being asked, because we always
-                                deliver more than we promise.
-                            </p>
                         </div>
 
                     </div>
@@ -329,8 +325,7 @@ const Page = () => {
             </div>
 
 
-
-            <div className="relative bg-[#06121f]  px-6 md:px-16 overflow-hidden">
+            <div className="relative bg-[#06121f]  px-6 py-8 md:px-16 overflow-hidden">
                 <div className="absolute top-0 left-0 w-96 h-96 bg-blue-500/10 blur-3xl rounded-full" />
                 <div className="absolute bottom-0 right-0 w-96 h-96 bg-cyan-400/10 blur-3xl rounded-full" />
                 <div className="relative max-w-5xl mx-auto">
@@ -340,10 +335,10 @@ const Page = () => {
                         </button>
 
                         <h2 className="text-4xl md:text-6xl font-bold text-white mt-8">
-                            The <span className="text-blue-400">Stonearc</span> Standard
+                            The <span className="text-[#fd6402]">Stonearc</span> Standard
                         </h2>
 
-                        <div className="w-28 h-[3px] bg-blue-400 rounded-full mx-auto mt-6" />
+                        <div className="w-28 h-[3px] bg-[#fd6402] rounded-full mx-auto mt-6" />
                     </div>
 
                     <div className="space-y-5">
@@ -391,25 +386,18 @@ const Page = () => {
                                                         className="w-full h-full object-cover hover:scale-105 transition duration-500"
                                                     />
                                                 </div>
-
                                             </div>
                                         </div>
-
                                     </div>
-
                                 </div>
                             )
                         })}
-
                     </div>
-
                 </div>
-
             </div>
 
 
-            <section ref={sectionRef} className="relative bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white py-28 px-6 overflow-hidden">
-
+            <section ref={sectionRef} className="relative bg-white text-black py-28 px-6 overflow-hidden">
                 <div className="absolute inset-0 opacity-30">
                     <div className="absolute top-0 left-0 w-full h-full" style={{
                         backgroundImage: `radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 50%)`,
@@ -428,23 +416,22 @@ const Page = () => {
                 </div>
 
                 <div className="max-w-7xl mx-auto relative z-10">
-
                     <div className="text-center mb-20 animate-on-scroll">
                         <div className="inline-flex items-center gap-3 mb-4">
-                            <div className="w-12 h-px bg-gradient-to-r from-transparent to-blue-500" />
-                            <span className="text-blue-500 tracking-[6px] font-semibold text-sm uppercase">
+                            <div className="w-12 h-px bg-gradient-to-r from-transparent to-[#fd6402]" />
+                            <span className="text-[#fd6402] tracking-[6px] font-semibold text-sm uppercase">
                                 OUR TEAM
                             </span>
-                            <div className="w-12 h-px bg-gradient-to-l from-transparent to-blue-500" />
+                            <div className="w-12 h-px bg-gradient-to-l from-transparent to-[#fd6402]" />
                         </div>
 
                         <h2 className="text-4xl md:text-4xl lg:text-5xl  font-bold mt-4">
                             The People Behind  Every Project
                         </h2>
-                        
-                        <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mt-6 rounded-full" />
 
-                        <p className="text-slate-300 mt-8 max-w-3xl mx-auto leading-relaxed text-lg">
+                        <div className="w-24 h-1 bg-gradient-to-r from-[#fd6402] to-[#fd6402] mx-auto mt-6 rounded-full" />
+
+                        <p className="text-black mt-8 max-w-3xl mx-auto leading-relaxed text-lg">
                             The Stonearc team is made up of engineers, architects, project managers, fabricators,
                             and site supervisors who bring deep domain expertise and a shared commitment to delivering results.
                         </p>
@@ -452,13 +439,13 @@ const Page = () => {
 
 
                     <div className="mb-20 animate-on-scroll">
-                        <div className="relative bg-gradient-to-br from-blue-600/10 to-purple-600/10 backdrop-blur-sm border border-blue-500/20 rounded-3xl p-8 md:p-10 shadow-2xl overflow-hidden">
+                        <div className="relative bg-black border border-blue-500/20 rounded-3xl p-8 md:p-10 shadow-2xl overflow-hidden">
                             <div className="absolute top-0 right-0 w-40 h-40 bg-blue-500/20 rounded-full blur-3xl" />
                             <div className="absolute bottom-0 left-0 w-40 h-40 bg-purple-500/20 rounded-full blur-3xl" />
 
                             <div className="relative flex items-start gap-6 flex-col md:flex-row">
                                 <div className="flex-shrink-0">
-                                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center shadow-lg">
+                                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#fd6402] to-[#fd6402] flex items-center justify-center shadow-lg">
                                         <span className="text-3xl">👥</span>
                                     </div>
                                 </div>
@@ -473,7 +460,7 @@ const Page = () => {
                                 </div>
                                 <div className="flex-shrink-0">
                                     <div className="px-4 py-2 bg-blue-500/20 rounded-full border border-blue-500/30">
-                                        <span className="text-blue-400 font-semibold">100% Accountable</span>
+                                        <span className="text-[#fd6402] font-semibold">100% Accountable</span>
                                     </div>
                                 </div>
                             </div>
@@ -498,12 +485,12 @@ const Page = () => {
                                             src={member.image}
                                             alt={member.name}
                                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                                            
+
                                         />
                                         <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60" />
 
 
-                                        
+
                                     </div>
 
 
@@ -511,14 +498,14 @@ const Page = () => {
                                         <h3 className="text-xl font-bold text-white mb-1">
                                             {member.name}
                                         </h3>
-                                        <p className="text-blue-400 font-semibold text-sm mb-2">
+                                        <p className="text-[#fd6402] font-semibold text-sm mb-2">
                                             {member.role}
                                         </p>
                                         <p className="text-slate-400 text-sm mb-3">
                                             {member.expertise}
                                         </p>
                                         <div className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-slate-800 border border-slate-700">
-                                          
+
                                             <span className="text-slate-300 text-xs font-medium">{member.experience} Experience</span>
                                         </div>
 
@@ -532,36 +519,51 @@ const Page = () => {
                     </div>
 
 
+
+
                     <div className="animate-on-scroll">
                         <div className="text-center mb-12">
-                            <h3 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+                            <h3 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-[#fd6402] to-[#fd6402] bg-clip-text text-transparent">
                                 Our Core Expertise
                             </h3>
-                            <p className="text-slate-400 mt-4">Backed by years of experience and proven track record</p>
+                            <p className="text-black mt-4">
+                                Backed by years of experience and proven track record
+                            </p>
                         </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
                             {expertiseAreas.map((area, index) => (
                                 <div
                                     key={index}
-                                    className="group relative p-6 rounded-2xl bg-gradient-to-br from-slate-800/50 to-slate-900/50 border border-slate-700 hover:border-blue-500/50 transition-all duration-300 hover:transform hover:-translate-y-1"
+                                    className="group relative rounded-2xl p-[1.5px] transition-all duration-300 hover:-translate-y-1"
                                 >
-                                    <div className="flex items-start gap-4">
-                                        <div className={`flex-shrink-0 w-14 h-14 rounded-xl bg-gradient-to-br from-${area.color}-600/20 to-${area.color}-500/10 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform`}>
-                                            {area.icon}
-                                        </div>
-                                        <div className="flex-1">
-                                            <h4 className="text-lg font-bold text-white mb-1">
-                                                {area.title}
-                                            </h4>
-                                            <p className="text-slate-400 text-sm mb-2">
-                                                {area.description}
-                                            </p>
-                                            <div className="inline-flex items-center gap-1 px-2 py-1 rounded bg-blue-500/10 border border-blue-500/20">
-                                                <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse" />
-                                                <span className="text-xs text-blue-400 font-medium">{area.stat}</span>
+                                    <div className="absolute inset-0 rounded-2xl border-2 border-amber-500 opacity-0 group-hover:opacity-100 transition-all duration-300 "></div>
+                                    <div className="relative bg-gray-200 rounded-2xl p-6 transition-all duration-300 group-hover:bg-gray-100">
+                                        <div className="flex items-start gap-4">
+                                            <div className="flex-shrink-0 w-14 h-14 rounded-xl bg-blue-500/10 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform duration-300">
+                                                {area.icon}
+                                            </div>
+                                            <div className="flex-1">
+
+                                                <h4 className="text-lg font-bold text-black mb-1">
+                                                    {area.title}
+                                                </h4>
+
+                                                <p className="text-black text-sm mb-2">
+                                                    {area.description}
+                                                </p>
+
+                                                <div className="inline-flex items-center gap-1 px-2 py-1 rounded bg-blue-500/10 border border-blue-500/20">
+                                                    <span className="w-1.5 h-1.5 rounded-full bg-[#fd6402] animate-pulse" />
+                                                    <span className="text-xs text-[#fd6402] font-medium">
+                                                        {area.stat}
+                                                    </span>
+                                                </div>
+
                                             </div>
                                         </div>
+
                                     </div>
                                 </div>
                             ))}
@@ -591,7 +593,6 @@ const Page = () => {
                 }
             `}</style>
             </section>
-
 
         </section>
     )

@@ -78,18 +78,18 @@ const Page = () => {
             className="max-w-3xl"
           >
             <div className="inline-flex items-center gap-4 mb-6">
-              <div className="w-14 h-[2px] bg-blue-500" />
+              <div className="w-14 h-[2px] bg-[#fd6402]" />
 
-              <span className="uppercase tracking-[5px] text-blue-400 text-sm">
+              <span className="uppercase tracking-[5px] text-[#fd6402] text-sm">
                 Industries We Serve
               </span>
 
-              <div className="w-14 h-[2px] bg-blue-500" />
+              <div className="w-14 h-[2px] bg-[#fd6402]" />
             </div>
 
             <h1 className="text-5xl md:text-5xl font-bold leading-[1.05] tracking-tight">
               Built for Every Industry.
-              <span className="block mt-4 bg-gradient-to-r from-blue-400 to-blue-300 bg-clip-text text-transparent">
+              <span className="block mt-4 bg-gradient-to-r from-[#fd6402] to-[#fd6402] bg-clip-text text-transparent">
                 Engineered for Performance.
               </span>
             </h1>
@@ -121,7 +121,7 @@ const Page = () => {
           >
             <h2 className="text-4xl md:text-5xl font-bold leading-[1.1] tracking-tight">
               Built for Your Industry.
-              <span className="block mt-4 text-blue-400">
+              <span className="block mt-4 text-[#fd6402]">
                 Engineered for Reality.
               </span>
             </h2>
@@ -256,7 +256,7 @@ const Page = () => {
                           key={idx}
                           className="flex items-start gap-3 text-gray-300"
                         >
-                          <span className="w-2 h-2 mt-2 rounded-full bg-blue-400 shrink-0" />
+                          <span className="w-2 h-2 mt-2 rounded-full bg-[#fd6402] shrink-0" />
 
                           <span>{p}</span>
                         </li>

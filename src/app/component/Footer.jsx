@@ -207,7 +207,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="text-sm text-gray-500 transition hover:text-white"
             >
-              Developed By: NakshatraNaman Creations
+              Developed By: NakshatraNamaha Creations
             </a>
 
        

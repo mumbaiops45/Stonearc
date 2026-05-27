@@ -170,21 +170,13 @@ const page = () => {
                         className="max-w-4xl"
                     >
 
-                        {/* <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full border border-blue-500/30 bg-blue-500/10 mb-8">
-
-                            <div className="w-2 h-1 rounded-full bg-blue-400 animate-pulse" />
-
-                            <span className="text-blue-300 uppercase tracking-[4px] text-sm">
-                                Why Stonearc Engineers
-                            </span>
-
-                        </div> */}
+                    
 
                         <h1 className="text-4xl md:text-4xl font-bold leading-tight">
 
                             Engineering <br />
 
-                            <span className="bg-gradient-to-r from-blue-400 via-blue-400 to-blue-400 bg-clip-text text-transparent">
+                            <span className="bg-gradient-to-r from-[#fd6402] via-[#fd6402] to-[#fd6402] bg-clip-text text-transparent">
                                 Beyond Construction
                             </span>
 
@@ -199,7 +191,7 @@ const page = () => {
 
                         <div className="flex flex-wrap gap-5 mt-12">
 
-                            <button className="px-8 py-4 bg-blue-600 hover:bg-blue-700 rounded-full font-semibold transition-all duration-300 shadow-[0_0_40px_rgba(59,130,246,0.4)]">
+                            <button className="px-8 py-4 bg-[#fd6402] hover:bg-[#fd6402] rounded-full font-semibold transition-all duration-300 shadow-[0_0_40px_rgba(59,130,246,0.4)]">
                                 Explore Expertise
                             </button>
 
@@ -232,7 +224,7 @@ const page = () => {
                         What Makes Stonearc Different
                     </h2>
 
-                    <div className="w-32 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mt-8" />
+                    <div className="w-32 h-1 bg-gradient-to-r from-[#fd6402] to-[#fd6402] mx-auto rounded-full mt-8" />
 
                 </motion.div>
 
@@ -289,7 +281,7 @@ const page = () => {
 
                                             <div className="w-14 h-14 rounded-2xl bg-blue-500/10 border border-blue-500/20 backdrop-blur-md flex items-center justify-center mb-6">
 
-                                                <span className="text-blue-400 text-xl font-bold">
+                                                <span className="text-[#fd6402] text-xl font-bold">
                                                     0{index + 1}
                                                 </span>
 
@@ -358,7 +350,7 @@ const page = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.2, duration: 0.6 }}
-                                className="text-blue-400 tracking-[4px] uppercase text-sm"
+                                className="text-[#fd6402] tracking-[4px] uppercase text-sm"
                             >
                                 Standards & Certifications
                             </motion.p>
@@ -532,7 +524,7 @@ const page = () => {
                                         type: "spring",
                                         stiffness: 120,
                                     }}
-                                    className="text-2xl font-bold text-blue-400"
+                                    className="text-2xl font-bold text-[#fd6402]"
                                 >
                                     98%
                                 </motion.h3>
@@ -607,7 +599,7 @@ const page = () => {
         duration-700
 
         ring-1 ring-white/10
-       hover:border-blue-500  
+       hover:border-[#fd6402]  
       "
                         >
 
