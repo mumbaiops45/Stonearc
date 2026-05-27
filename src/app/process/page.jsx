@@ -334,40 +334,6 @@ const Page = () => {
         </div>
       </div>
 
-      {/* <div className="bg-[#060c18] border-t border-b border-white/5 py-32">
-        <div className="max-w-7xl  px-16 md:px-16">
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="grid md: grid-cols-2 gap-10 items-end mb-24"
-          >
-            <div className="max-w-2xl">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-[1px] bg-blue-500" />
-                <p className="text-blue-400 text-xs tracking-[0.35em] uppercase font-semibold">Project Workflow</p>
-              </div>
-              <h2 className="text-4xl md:text-5xl font-semibold leading-[1.05] tracking-[-0.04em] text-white">Our Working
-                <span className="block text-white/60">Process</span>
-              </h2>
-            </div>
-
-            <div className="md:ml-auto max-w-sm">
-              <p className="text-white text-base leading-8 border-l border-white.10 pl-6">Each stage is strategically planned, clearly documented, and executed with complete transparency from start to delivery.</p>
-
-            </div>
-
-          </motion.div>
-
-          <div className="space-y-5">
-            {processStagess.map((stage, index) => (
-              <StageCard key={index} stage={stage} index={index} />
-            ))}
-          </div>
-        </div>
-      </div> */}
-
       <div className="bg-[#060c18] border-t border-b border-white/5 py-16 md:py-32">
   <div className="max-w-7xl mx-auto px-6 sm:px-10 md:px-16">
 

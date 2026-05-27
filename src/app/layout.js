@@ -11,7 +11,7 @@ const poppins = Poppins({
 
 export default function RootLayout({children}) {
   return (
-    <html lang="en" className={poppins.variable}>
+    <html lang="en" >
       <body suppressHydrationWarning>
         <Navbar/>
         {children}

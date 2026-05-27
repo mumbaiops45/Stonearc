@@ -63,7 +63,7 @@ const WhyCard = ({ text, index }) => (
                 <div className="w-1.5 h-1.5 rounded-full bg-blue-400" />
             </div>
             <p className="text-white/65 text-[15px] leading-7 group-hover:text-white/80 transition-colors duration-300"
-                style={{ fontFamily: "'DM Sans', sans-serif" }}>
+               >
                 {text}
             </p>
         </div>
@@ -77,7 +77,7 @@ const Page = () => {
     });
 
     return (
-        <section className="bg-[#070c18] text-white overflow-hidden" style={{ fontFamily: "'Sora', sans-serif" }}>
+        <section className="bg-[#070c18] text-white overflow-hidden" >
 
 
             <style>{`
@@ -444,7 +444,7 @@ const Page = () => {
 
                                 <h3 className="text-2xl font-bold mb-8 tracking-tight">Stonearc Engineers</h3>
 
-                                <div className="space-y-5" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+                                <div className="space-y-5" >
                                     {[
                                         { icon: "📞", label: "Phone", value: "+91 9087654321" },
                                         { icon: "✉️", label: "Email", value: "contact@stonearc.com" },
@@ -465,7 +465,7 @@ const Page = () => {
 
                                 <div className="mt-8 pt-8 border-t border-white/6">
                                     <div className="flex items-center justify-between">
-                                        <div style={{ fontFamily: "'DM Sans', sans-serif" }}>
+                                        <div >
                                             <div className="text-white/35 text-[11px] tracking-[3px] uppercase mb-1">Office Hours</div>
                                             <div className="text-white/70 text-[15px]">Monday – Saturday</div>
                                             <div className="text-white/70 text-[15px]">9:00 AM – 6:00 PM</div>
@@ -475,7 +475,7 @@ const Page = () => {
                                                 <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
                                                 <span className="text-green-400 text-sm font-medium">Open Now</span>
                                             </div>
-                                            <div className="text-white/30 text-xs" style={{ fontFamily: "'DM Sans', sans-serif" }}>IST Timezone</div>
+                                            <div className="text-white/30 text-xs" >IST Timezone</div>
                                         </div>
                                     </div>
                                 </div>
@@ -487,7 +487,7 @@ const Page = () => {
                                 <div className="absolute top-0 left-0 right-0 h-[1px]"
                                     style={{ background: "linear-gradient(90deg, transparent, rgba(59,130,246,0.4), transparent)" }} />
                                 <div className="text-blue-400/80 text-[11px] tracking-[4px] uppercase font-semibold mb-3">Our Promise</div>
-                                <p className="text-white/60 text-[15px] leading-7 italic" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+                                <p className="text-white/60 text-[15px] leading-7 italic" >
                                     "We have built our reputation on honest conversations and engineering clarity."
                                 </p>
                             </div>
@@ -520,8 +520,7 @@ const Page = () => {
                                 Why Contact Us First?
                             </h2>
                         </div>
-                        <p className="text-white/40 text-base max-w-xs leading-7 md:text-right"
-                            style={{ fontFamily: "'DM Sans', sans-serif" }}>
+                        <p className="text-white/40 text-base max-w-xs leading-7 md:text-right">
                             Clear communication. Honest engineering. No surprises.
                         </p>
                     </motion.div>
@@ -549,7 +548,7 @@ const Page = () => {
                         <div className="absolute top-0 left-0 right-0 h-[1px]"
                             style={{ background: "linear-gradient(90deg, transparent, rgba(59,130,246,0.4), transparent)" }} />
                         <p className="text-white/60 text-lg md:text-xl italic leading-8 max-w-3xl mx-auto"
-                            style={{ fontFamily: "'DM Sans', sans-serif" }}>
+                            >
                             "We have built our reputation on honest conversations and engineering clarity."
                         </p>
                         <div className="mt-6 mx-auto w-16 h-[1px] shimmer-line rounded-full" />
