@@ -116,7 +116,17 @@ const Footer = () => {
                 </p>
 
                 <p className="mt-1 leading-6">
-                  Mumbai, Maharashtra, India
+                  340 ground floor 4th T block Bsk 6th stage Thalagattapura 560109
+                </p>
+              </div>
+
+              <div>
+                <p className="font-medium text-white">
+                  PEB plant location
+                </p>
+
+                <p className="mt-1 leading-6">
+                  plot 10/10, Harohalli 2nd phase industrial area, Harohalli, Karnataka-562112
                 </p>
               </div>
 
@@ -126,14 +136,14 @@ const Footer = () => {
                 </p>
 
                 <a
-                  href="tel:+919876543210"
+                  href="tel:+917760587776"
                   className="mt-1 block hover:text-white transition"
                 >
-                  +91 98765 43210
+                  +91 7760587776
                 </a>
               </div>
 
-              <div>
+              {/* <div>
                 <p className="font-medium text-white">
                   Email
                 </p>
@@ -144,7 +154,7 @@ const Footer = () => {
                 >
                   info@stonearc.com
                 </a>
-              </div>
+              </div> */}
             </div>
 
            
@@ -154,7 +164,7 @@ const Footer = () => {
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-gray-300 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-blue-500 hover:bg-blue-600 hover:text-white"
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-gray-300 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-blue-500 hover:bg-white hover:text-black"
               >
                 <FaFacebookF />
               </a>
@@ -163,7 +173,7 @@ const Footer = () => {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-gray-300 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-pink-500 hover:bg-pink-600 hover:text-white"
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-gray-300 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-pink-500 hover:bg-white hover:text-black"
               >
                 <FaInstagram />
               </a>
@@ -172,7 +182,7 @@ const Footer = () => {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-gray-300 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-cyan-500 hover:bg-cyan-600 hover:text-white"
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-gray-300 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-cyan-500 hover:bg-white hover:text-black"
               >
                 <FaLinkedinIn />
               </a>

@@ -170,7 +170,7 @@ const page = () => {
                         className="max-w-4xl"
                     >
 
-                        <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full border border-blue-500/30 bg-blue-500/10 mb-8">
+                        {/* <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full border border-blue-500/30 bg-blue-500/10 mb-8">
 
                             <div className="w-2 h-1 rounded-full bg-blue-400 animate-pulse" />
 
@@ -178,7 +178,7 @@ const page = () => {
                                 Why Stonearc Engineers
                             </span>
 
-                        </div>
+                        </div> */}
 
                         <h1 className="text-4xl md:text-4xl font-bold leading-tight">
 

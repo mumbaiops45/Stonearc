@@ -446,7 +446,7 @@ const Page = () => {
 
                                 <div className="space-y-5" >
                                     {[
-                                        { icon: "📞", label: "Phone", value: "+91 9087654321" },
+                                        { icon: "📞", label: "Phone", value: "+91 7760587776" },
                                         { icon: "✉️", label: "Email", value: "contact@stonearc.com" },
                                         { icon: "🌐", label: "Website", value: "www.stonearc.com" },
                                     ].map(({ icon, label, value }) => (
