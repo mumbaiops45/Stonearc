@@ -109,7 +109,7 @@ const Cta = () => {
                 <motion.div
                   key={index}
                   onClick={() => handleSelect(index)}
-                  className="cursor-pointer rounded-2xl p-6 border transition-all duration-300 bg-gray-300 "
+                  className="cursor-pointer rounded-2xl p-6 border transition-all duration-300 bg-gray-200 "
                   style={{
                     borderColor: isActive
                       ? "#f97316"
