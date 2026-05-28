@@ -190,13 +190,35 @@ const page = () => {
                                 <div className="h-[55%] w-full overflow-hidden">
                                     <img src={card.img} alt={card.title} className="w-full h-full object-cover object-top group-hover:scale-105 transition-all duration-700" />
                                 </div>
-                                <div className="absolute bottom-0 left-0 w-full p-5 sm:p-6 bg-gradient-to-t from-black/95 via-black/80 to-transparent">
+                                {/* <div className="absolute bottom-0 left-0 w-full p-5 sm:p-6 bg-gradient-to-t from-black/95 via-black/80 to-transparent">
                                     <h4 className="text-white text-base sm:text-xl font-semibold">{card.title}</h4>
                                     <div className="w-0 group-hover:w-24 h-[2px] bg-[#fd6402] mt-3 mb-3 transition-all duration-500" />
                                     <p className="text-gray-300 text-xs sm:text-sm leading-relaxed opacity-0 translate-y-5 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
                                         {card.desc}
                                     </p>
-                                </div>
+                                </div> */}
+                                <div className="absolute bottom-0 left-0 w-full p-5 sm:p-6 bg-gradient-to-t from-black/95 via-black/80 to-transparent">
+
+ 
+  <div className="group-hover:-translate-y-3 transition-all duration-500">
+
+    <h4 className="text-white text-base sm:text-xl font-semibold">
+      {card.title}
+    </h4>
+
+    <div className="w-0 group-hover:w-24 h-[2px] bg-[#fd6402] mt-3 mb-3 transition-all duration-500" />
+
+    {/* 👇 KEY FIX */}
+    <div className="overflow-hidden max-h-0 group-hover:max-h-40 transition-all duration-500 ease-in-out">
+
+      <p className="text-gray-300 text-xs sm:text-sm leading-relaxed">
+        {card.desc}
+      </p>
+
+    </div>
+
+  </div>
+</div>
                             </div>
                         ))}
                     </div>

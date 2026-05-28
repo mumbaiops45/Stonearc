@@ -136,58 +136,18 @@ const Footer = () => {
                 </p>
 
                 <a
-                  href="tel:+917760587776"
+                  href="tel:+918197361002"
                   className="mt-1 block hover:text-white transition"
                 >
-                  +91 7760587776
+                  +91 8197361002
                 </a>
               </div>
 
-              {/* <div>
-                <p className="font-medium text-white">
-                  Email
-                </p>
-
-                <a
-                  href="mailto:info@stonearc.com"
-                  className="mt-1 block hover:text-white transition"
-                >
-                  info@stonearc.com
-                </a>
-              </div> */}
+              
             </div>
 
            
-            {/* <div className="mt-8 flex items-center gap-4">
-
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-gray-300 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-blue-500 hover:bg-white hover:text-black"
-              >
-                <FaFacebookF />
-              </a>
-
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-gray-300 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-pink-500 hover:bg-white hover:text-black"
-              >
-                <FaInstagram />
-              </a>
-
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-gray-300 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-cyan-500 hover:bg-white hover:text-black"
-              >
-                <FaLinkedinIn />
-              </a>
-
-            </div> */}
+            
           </div>
         </div>
 

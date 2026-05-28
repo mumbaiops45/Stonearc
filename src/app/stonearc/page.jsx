@@ -55,7 +55,6 @@ const page = () => {
                         variants={fadeUp}
                         className="max-w-4xl"
                     >
-
                         <h1 className="text-4xl md:text-4xl text-white font-bold leading-tight">
 
                             Engineering <br />
@@ -79,7 +78,7 @@ const page = () => {
                                 Explore Expertise
                             </button>
 
-                            <button className="px-8 py-4 border border-white/10 rounded-full hover:bg-white/5 transition-all duration-300">
+                            <button className="px-8 py-4 border bg-[#fd6402] hover:bg-[#fd6402] rounded-full font-semibold transition-all duration-300">
                                 View Standards
                             </button>
 
