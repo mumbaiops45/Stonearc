@@ -2,30 +2,9 @@
 
 import React, { useEffect, useState, useRef } from "react";
 import { motion } from "framer-motion";
-import { items } from "../data/data";
+import { items , fallbackItems } from "../data/data";
 
-const fallbackItems = [
-  {
-    text: "We deliver complete engineering solutions — architecture, structural design, and PEB under one roof.",
-    image: "/project1.jpg",
-  },
-  {
-    text: "Every project follows a structured delivery process with zero guesswork and full transparency.",
-    image: "/project2.jpg",
-  },
-  {
-    text: "Our clients receive direct access to engineers — no intermediaries, no miscommunication.",
-    image: "/project3.jpg",
-  },
-  {
-    text: "We manage every approval, permission, and statutory requirement so you don't have to.",
-    image: "/project4.jpg",
-  },
-  {
-    text: "Honest cost estimation from day one — no padding, no hidden charges, no surprises at handover.",
-    image: "/project5.jpg",
-  },
-];
+
 
 function usePreloadImages(imageList) {
   useEffect(() => {

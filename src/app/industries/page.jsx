@@ -43,7 +43,7 @@ const Page = () => {
   const heroY = useTransform(scrollY, [0, 500], [0, 120]);
 
   return (
-    <section className="bg-[#0B1120] text-white overflow-hidden">
+    <section className=" overflow-hidden">
       <div className="relative h-screen w-full overflow-hidden">
         <motion.div
           style={{
@@ -87,7 +87,7 @@ const Page = () => {
               <div className="w-14 h-[2px] bg-[#fd6402]" />
             </div>
 
-            <h1 className="text-5xl md:text-5xl font-bold leading-[1.05] tracking-tight">
+            <h1 className="text-5xl text-white md:text-5xl font-bold leading-[1.05] tracking-tight">
               Built for Every Industry.
               <span className="block mt-4 bg-gradient-to-r from-[#fd6402] to-[#fd6402] bg-clip-text text-transparent">
                 Engineered for Performance.
@@ -126,12 +126,12 @@ const Page = () => {
               </span>
             </h2>
 
-            <p className="mt-8 text-white/80 text-lg leading-8">
+            <p className="mt-8 text-black text-lg leading-8">
               Stonearc Engineers has delivered projects across manufacturing,
               logistics, pharma, education, and infrastructure sectors.
             </p>
 
-            <p className="mt-6 text-white/70 text-lg leading-8">
+            <p className="mt-6 text-black text-lg leading-8">
               The building that works for a pharmaceutical manufacturer is
               different from the one that works for an e-commerce fulfilment
               centre — even if they look similar from the outside. We know the
@@ -179,7 +179,7 @@ const Page = () => {
             }}
             className="mb-20 text-center"
           >
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
+            <h2 className="text-4xl md:text-5xl text-white font-bold tracking-tight">
               Industries We Serve
             </h2>
 

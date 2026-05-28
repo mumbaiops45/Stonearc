@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import {processStagess} from "../data/data"
+import { processStagess } from "../data/data"
 
 const fadeUp = {
   hidden: { opacity: 0, y: 60 },
@@ -124,7 +124,7 @@ const StageCard = ({ stage, index }) => {
 const Page = () => {
   return (
     <section
-      className="bg-[#080e1c] text-white overflow-hidden"
+      className=" bg-gray-100 overflow-hidden"
     >
 
       <style>{`
@@ -147,7 +147,7 @@ const Page = () => {
       `}</style>
 
 
-      <div className="relative w-full min-h-screen flex items-center hero-grid overflow-hidden">
+      <div className="relative bg-[#080e1c] w-full min-h-screen flex items-center hero-grid overflow-hidden">
 
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-blue-600/10 blur-[120px] pointer-events-none" />
         <div className="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full bg-blue-500/8 blur-[100px] pointer-events-none" />
@@ -190,7 +190,7 @@ const Page = () => {
               Structured Process.
               <br />
               <span className="text-transparent bg-clip-text bg-[#fd6402]"
-                
+
               >
                 Predictable Delivery.
               </span>
@@ -210,7 +210,7 @@ const Page = () => {
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
                 className="relative px-8 py-4 rounded-full font-semibold text-white bg-[#fd6402] group"
-                
+
               >
                 <span className="relative z-10 ">Explore Process</span>
                 <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full" />
@@ -220,7 +220,7 @@ const Page = () => {
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
                 className="relative px-8 py-4 rounded-full font-semibold text-white bg-[#fd6402] group"
-                
+
               >
                 <span className="relative z-10">Scroll to stages</span>
                 <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full" />
@@ -258,11 +258,11 @@ const Page = () => {
             <div className="w-16 h-[2px] bg-[#fd6402] rounded-full mt-8 mb-10" />
 
             <div className="space-y-5" >
-              <p className="text-white text-lg leading-8">
+              <p className="text-black text-lg leading-8">
                 Every Stonearc project — regardless of size, type, or complexity —
                 follows the same structured delivery framework.
               </p>
-              <p className="text-white text-lg leading-8">
+              <p className="text-black text-lg leading-8">
                 Our process ensures clarity, engineering precision, quality
                 control, and predictable project execution from day one.
               </p>
@@ -273,7 +273,7 @@ const Page = () => {
               {["Engineering-Led", "Fully Documented", "Client Transparent", "Zero Surprises"].map((tag) => (
                 <span
                   key={tag}
-                  className="px-4 py-2 rounded-full border border-white/12 bg-white/4 text-white text-sm"
+                  className="px-4 py-2 rounded-full border border-white/12 bg-white/4 text-black text-sm"
                 >
                   {tag}
                 </span>
@@ -327,45 +327,45 @@ const Page = () => {
       </div>
 
       <div className="bg-[#060c18] border-t border-b border-white/5 py-16 md:py-32">
-  <div className="max-w-7xl mx-auto px-6 sm:px-10 md:px-16">
+        <div className="max-w-7xl mx-auto px-6 sm:px-10 md:px-16">
 
-    <motion.div
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.8 }}
-      className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start md:items-end mb-16 md:mb-24"
-    >
-      <div className="max-w-2xl">
-        <div className="flex items-center gap-3 mb-5 md:mb-6">
-          <div className="w-10 h-[1px] bg-[#fd6402]" />
-          <p className="text-[#fd6402] text-[10px] sm:text-xs tracking-[0.35em] uppercase font-semibold">
-            Project Workflow
-          </p>
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start md:items-end mb-16 md:mb-24"
+          >
+            <div className="max-w-2xl">
+              <div className="flex items-center gap-3 mb-5 md:mb-6">
+                <div className="w-10 h-[1px] bg-[#fd6402]" />
+                <p className="text-[#fd6402] text-[10px] sm:text-xs tracking-[0.35em] uppercase font-semibold">
+                  Project Workflow
+                </p>
+              </div>
+
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold leading-[1.1] md:leading-[1.05] tracking-[-0.04em] text-white">
+                Our Working
+                <span className="block text-white/60">Process</span>
+              </h2>
+            </div>
+
+            <div className="md:ml-auto max-w-sm">
+              <p className="text-white text-sm sm:text-base leading-7 sm:leading-8 border-l border-white/10 pl-4 sm:pl-6">
+                Each stage is strategically planned, clearly documented, and executed
+                with complete transparency from start to delivery.
+              </p>
+            </div>
+          </motion.div>
+
+          <div className="space-y-4 sm:space-y-5">
+            {processStagess.map((stage, index) => (
+              <StageCard key={index} stage={stage} index={index} />
+            ))}
+          </div>
+
         </div>
-
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold leading-[1.1] md:leading-[1.05] tracking-[-0.04em] text-white">
-          Our Working
-          <span className="block text-white/60">Process</span>
-        </h2>
       </div>
-
-      <div className="md:ml-auto max-w-sm">
-        <p className="text-white text-sm sm:text-base leading-7 sm:leading-8 border-l border-white/10 pl-4 sm:pl-6">
-          Each stage is strategically planned, clearly documented, and executed
-          with complete transparency from start to delivery.
-        </p>
-      </div>
-    </motion.div>
-
-    <div className="space-y-4 sm:space-y-5">
-      {processStagess.map((stage, index) => (
-        <StageCard key={index} stage={stage} index={index} />
-      ))}
-    </div>
-
-  </div>
-</div>
 
 
       <div className="py-32">
@@ -396,7 +396,7 @@ const Page = () => {
               style={{ background: "linear-gradient(90deg, transparent 0%, rgba(59,130,246,0.5) 50%, transparent 100%)" }}
             />
             <div className="relative z-10 px-10 py-20 md:px-20 md:py-24 text-center">
-              <h2 className="mt-5 text-4xl md:text-5xl font-bold leading-[1.1] tracking-[-0.03em] max-w-3xl mx-auto">
+              <h2 className="mt-5 text-4xl md:text-5xl text-white font-bold leading-[1.1] tracking-[-0.03em] max-w-3xl mx-auto">
                 Handover &{" "}
                 <span
                   className="text-transparent bg-clip-text"

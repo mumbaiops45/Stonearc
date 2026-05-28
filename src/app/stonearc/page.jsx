@@ -2,19 +2,8 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import {
-    HiOutlineShieldCheck,
-    HiOutlineCube,
-    HiOutlineScale,
-    HiOutlineLightningBolt,
-} from "react-icons/hi";
-import { HiMiniSparkles } from "react-icons/hi2";
-
-import {
-    FaBuilding,
-    FaDraftingCompass,
-    FaStar,
-} from "react-icons/fa";
+import {differentiators , testimonials , standards } from "../data/data"
+import { FaStar} from "react-icons/fa";
 
 const fadeUp = {
     hidden: {
@@ -31,114 +20,11 @@ const fadeUp = {
     },
 };
 
-const differentiators = [
-    {
-        title: "In-House Engineering",
-        description:
-            "Stonearc engineers everything in-house — ensuring faster decisions, better coordination, and complete accountability from design to execution.",
-        image:
-            "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop",
-    },
-    {
-        title: "One Team. Three Disciplines.",
-        description:
-            "Construction, architecture, and PEB under one roof creates a seamless project delivery system with no coordination gaps.",
-        image:
-            "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1200&auto=format&fit=crop",
-    },
-    {
-        title: "Transparent Project Tracking",
-        description:
-            "Every client receives structured milestone tracking, progress visibility, and real-time communication throughout the project lifecycle.",
-        image:
-            "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop",
-    },
-    {
-        title: "Quality Without Compromise",
-        description:
-            "Every steel section, concrete pour, and structural connection is rigorously tested and documented for long-term reliability.",
-        image:
-            "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1200&auto=format&fit=crop",
-    },
-    {
-        title: "Delivery Discipline",
-        description:
-            "Our disciplined execution process and milestone-based planning ensures projects are completed on time without sacrificing quality.",
-        image:
-            "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200&auto=format&fit=crop",
-    },
-    {
-        title: "Post-Handover Support",
-        description:
-            "Stonearc provides long-term engineering support, inspections, and structural warranty even after project handover.",
-        image:
-            "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop",
-    },
-];
 
-const testimonials = [
-    {
-        quote:
-            "Stonearc gave us a warehouse that was ready in 14 weeks — on time, within budget, and built better than we expected.",
-        role: "Operations Director",
-        company: "Logistics Company",
-        image:
-            "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop",
-    },
-    {
-        quote:
-            "The difference was visible from the first site meeting. They think like engineers, not just builders.",
-        role: "Real Estate Developer",
-        company: "Residential Project",
-        image:
-            "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop",
-    },
-    {
-        quote:
-            "The PEB structure Stonearc built has been operational for four years with zero maintenance issues.",
-        role: "Plant Manager",
-        company: "Manufacturing Facility",
-        image:
-            "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=800&auto=format&fit=crop",
-    },
-];
-
-const standards = [
-    {
-        title: "IS 456:2000",
-        icon: HiOutlineShieldCheck,
-        color: "from-blue-500 to-cyan-400",
-    },
-    {
-        title: "IS 800:2007",
-        icon: HiOutlineCube,
-        color: "from-purple-500 to-pink-500",
-    },
-    {
-        title: "IS 875 (Parts 1-5)",
-        icon: HiOutlineScale,
-        color: "from-orange-500 to-yellow-400",
-    },
-    {
-        title: "IS 1893:2016",
-        icon: HiOutlineLightningBolt,
-        color: "from-red-500 to-orange-500",
-    },
-    {
-        title: "NBC 2016",
-        icon: FaBuilding,
-        color: "from-green-500 to-emerald-400",
-    },
-    {
-        title: "MBMA Standards",
-        icon: FaDraftingCompass,
-        color: "from-indigo-500 to-blue-500",
-    }
-];
 
 const page = () => {
     return (
-        <section className="bg-[#0B1120] text-white overflow-hidden">
+        <section className="bg-gray-100 overflow-hidden">
 
             <div className="relative h-[90vh] overflow-hidden">
 
@@ -170,9 +56,7 @@ const page = () => {
                         className="max-w-4xl"
                     >
 
-                    
-
-                        <h1 className="text-4xl md:text-4xl font-bold leading-tight">
+                        <h1 className="text-4xl md:text-4xl text-white font-bold leading-tight">
 
                             Engineering <br />
 
@@ -220,7 +104,7 @@ const page = () => {
                         Differentiators
                     </button>
 
-                    <h2 className="mt-8 text-5xl md:text-5xl font-bold text-white">
+                    <h2 className="mt-8 text-5xl md:text-5xl font-bold text-black">
                         What Makes Stonearc Different
                     </h2>
 
@@ -558,7 +442,7 @@ const page = () => {
                         Client Testimonials
                     </button>
 
-                    <h2 className="mt-8 text-4xl md:text-5xl font-bold text-white">
+                    <h2 className="mt-8 text-4xl md:text-5xl font-bold text-black">
                         What Our Clients Say
                     </h2>
 

@@ -32,7 +32,7 @@ const staggerContainer = {
 
 const page = () => {
     return (
-        <section className="bg-[#0B1120] text-white overflow-hidden">
+        <section className="bg-gray-100 overflow-hidden">
 
             <div className="relative w-full h-screen overflow-hidden">
 
@@ -83,7 +83,7 @@ const page = () => {
 
                         <motion.h1
                             variants={fadeUp}
-                            className="text-4xl md:text-4xl lg:text-4xl font-bold leading-tight"
+                            className="text-4xl md:text-4xl text-white lg:text-4xl font-bold leading-tight"
                         >
                             Our Projects <br />
 
@@ -139,7 +139,7 @@ const page = () => {
                         </div>
 
 
-                        <h2 className="text-4xl md:text-4xl lg:text-4xl font-bold leading-[1.2] text-white">
+                        <h2 className="text-4xl md:text-4xl lg:text-4xl font-bold leading-[1.2] text-black">
                             Every Sector.
                             <span className="block mt-3 bg-gradient-to-r from-[#fd6402] via-[#fd6402] to-[#fd6402] bg-clip-text text-transparent">
                                 One Standard.
@@ -147,14 +147,14 @@ const page = () => {
                         </h2>
 
                         <div className="w-32 h-1 bg-gradient-to-r from-[#fd6402] to-[#fd6402] rounded-full mt-8" />
-                        <p className="mt-10 text-gray-400 text-lg leading-8 max-w-2xl">
+                        <p className="mt-10 text-gray-900 text-lg leading-8 max-w-2xl">
                             The Stonearc portfolio spans residential, commercial,
                             industrial, and institutional sectors — with projects ranging
                             from luxury homes to multi-lakh square feet developments
                             executed with engineering precision.
                         </p>
 
-                        <p className="mt-6 text-gray-400 text-lg leading-8 max-w-2xl">
+                        <p className="mt-6 text-gray-900 text-lg leading-8 max-w-2xl">
                             Every project reflects our commitment to premium quality,
                             modern construction systems, structural excellence,
                             and long-term client value.
@@ -225,7 +225,7 @@ const page = () => {
                             Project Categories
                         </p>
 
-                        <h2 className="mt-4 text-4xl md:text-5xl font-bold">
+                        <h2 className="mt-4 text-white text-4xl md:text-5xl font-bold">
                             Projects by Category
                         </h2>
 
@@ -234,7 +234,7 @@ const page = () => {
 
                     <div className="mb-28">
 
-                        <h3 className="text-3xl font-bold mb-12">
+                        <h3 className="text-3xl text-white font-bold mb-12">
                             Construction Projects
                         </h3>
 
@@ -248,7 +248,7 @@ const page = () => {
                                         scale: 1.02,
                                     }}
                                     transition={{ duration: 0.3 }}
-                                    className="bg-[#0B1120] rounded-3xl border border-white/10 overflow-hidden group"
+                                    className="bg-[#0B1120] text-white rounded-3xl border border-white/10 overflow-hidden group"
                                 >
                                     <div className="h-60 overflow-hidden">
                                         <img
@@ -279,7 +279,7 @@ const page = () => {
 
                     <div className="mb-28">
 
-                        <h3 className="text-3xl font-bold mb-12">
+                        <h3 className="text-3xl text-white font-bold mb-12">
                             Architecture Projects
                         </h3>
 
@@ -313,7 +313,7 @@ const page = () => {
                     </div>
 
                     <div>
-                        <h3 className="text-3xl font-bold mb-12">
+                        <h3 className="text-3xl text-white font-bold mb-12">
                             PEB Projects
                         </h3>
 
@@ -335,7 +335,7 @@ const page = () => {
                                         <img
                                             src={item.image}
                                             alt={item.title}
-                                            className="w-full h-full object-cover group-hover:scale-110 transition-all duration-700"
+                                            className="w-full h-full  object-cover group-hover:scale-110 transition-all duration-700"
                                         />
 
                                     </div>
@@ -343,7 +343,7 @@ const page = () => {
 
                                     <div className="p-8">
 
-                                        <h4 className="text-2xl font-semibold mb-4">
+                                        <h4 className="text-2xl text-white font-semibold mb-4">
                                             {item.title}
                                         </h4>
 

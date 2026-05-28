@@ -35,7 +35,7 @@ const page = () => {
     return (
         <section
             ref={sectionRef}
-            className="relative bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 overflow-x-hidden"
+            className="relative = overflow-x-hidden"
         >
 
             <div className="relative w-full min-h-[100svh] overflow-hidden">
@@ -73,14 +73,14 @@ const page = () => {
                         <span className="text-[#fd6402] text-xs sm:text-sm font-semibold uppercase tracking-wider">
                             OVERVIEW
                         </span>
-                        <h2 className="text-2xl sm:text-3xl font-bold mt-3 text-white leading-snug">
+                        <h2 className="text-2xl sm:text-3xl font-bold mt-3 text-black leading-snug">
                             Where Aesthetics Meet Structural Reality
                         </h2>
                     </div>
-                    <p className="text-slate-300 leading-relaxed text-sm sm:text-base lg:text-lg">
+                    <p className="text-black leading-relaxed text-sm sm:text-base lg:text-lg">
                         Great architecture is not just about what looks good on a render. It is about what works when it is built — structurally sound, spatially intelligent, compliant with regulations, and functional for the people who use it every day.
                     </p>
-                    <div className="bg-white border border-blue-500/20 rounded-2xl p-5 sm:p-6">
+                    <div className="bg-gray-100 border border-blue-500/20 rounded-2xl p-5 sm:p-6">
                         <p className="leading-relaxed italic text-sm sm:text-base">
                             The Stonearc architecture team brings together licensed architects and structural engineers who collaborate from the first sketch. This means our designs are not aspirational exercises — they are engineered from the beginning to be built efficiently and stand permanently.
                         </p>
@@ -225,7 +225,7 @@ const page = () => {
                         { title: "Environmental Clearance", desc: "Support for environmental permissions and required statutory approvals." },
                         { title: "Occupancy Certificate",   desc: "Final documentation and coordination for occupancy certificate approval." },
                     ].map((item, i) => (
-                        <div key={i} className="group relative bg-[#fdfdfd] border border-white/10 rounded-2xl p-5 sm:p-6 hover:border-blue-400/40 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-500 overflow-hidden">
+                        <div key={i} className="group relative bg-gray-200 border border-white/10 rounded-2xl p-5 sm:p-6 hover:border-blue-400/40 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-500 overflow-hidden">
                             <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/10 to-transparent opacity-0 group-hover:opacity-100 transition duration-500" />
                             <h3 className=" text-base sm:text-lg font-semibold mb-2">{item.title}</h3>
                             <p className=" text-xs sm:text-sm leading-relaxed">{item.desc}</p>
@@ -249,7 +249,7 @@ const page = () => {
                             desc: "We provide architectural services for renovation, refurbishment, and adaptive reuse of existing buildings — from structural assessment and design development to complete drawing sets for new functional use."
                         },
                     ].map((item, i) => (
-                        <div key={i} className="group relative bg-[#fdfdfd] border border-white/10 rounded-2xl p-6 sm:p-8 hover:border-blue-400/40 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-500 overflow-hidden">
+                        <div key={i} className="group relative bg-gray-200 border border-white/10 rounded-2xl p-6 sm:p-8 hover:border-blue-400/40 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-500 overflow-hidden">
                             <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/10 to-transparent opacity-0 group-hover:opacity-100 transition duration-500" />
                             <div className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-xl bg-[#0f172a] border border-white/10 mb-5 sm:mb-6">
                                 <span className="text-blue-400 text-lg sm:text-xl">{item.icon}</span>
@@ -282,7 +282,7 @@ const page = () => {
                         "The building must serve its users — not just impress them",
                         "Details matter — a well-resolved detail is the difference between a good building and a great one",
                     ].map((item, i) => (
-                        <div key={i} className="group bg-[#fefefe] border border-white/10 rounded-2xl p-5 sm:p-6 hover:border-blue-400/40 hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-500">
+                        <div key={i} className="group bg-gray-200 border border-white/10 rounded-2xl p-5 sm:p-6 hover:border-blue-400/40 hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-500">
                             <p className=" text-xs sm:text-sm leading-relaxed">{item}</p>
                             <div className="w-0 group-hover:w-full h-[2px] bg-[#fd6402] mt-4 transition-all duration-500 rounded-full" />
                         </div>
@@ -315,7 +315,7 @@ const page = () => {
                         { sector: "Institutional", types: "Schools, colleges, hospitals, government and civic buildings" },
                         { sector: "Renovation",    types: "Building upgrades, adaptive reuse, structural modifications" },
                     ].map((item, i) => (
-                        <div key={i} className="group bg-[#fff] border border-white/10 rounded-2xl p-5 sm:p-6 hover:border-blue-400/40 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-500">
+                        <div key={i} className="group bg-gray-200 border border-white/10 rounded-2xl p-5 sm:p-6 hover:border-blue-400/40 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-500">
                             <h4 className=" text-base sm:text-lg font-semibold mb-2 sm:mb-3">{item.sector}</h4>
                             <p className=" text-xs sm:text-sm leading-relaxed">{item.types}</p>
                             <div className="w-0 group-hover:w-full h-[2px] bg-[#fd6402] mt-4 sm:mt-5 transition-all duration-500 rounded-full" />

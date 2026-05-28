@@ -6,7 +6,7 @@ const Page = () => {
 
     const [activeImage, setActiveImage] = useState(processData[0].image);
     return (
-        <section className="bg-[#0f172a] text-white">
+        <section className="bg-gray-100">
 
             <div className="relative w-full h-screen overflow-hidden">
                 <div className="absolute inset-0 animate-kenburns">
@@ -43,7 +43,7 @@ const Page = () => {
                     What is a Pre-Engineered Building?
                 </h2>
 
-                <p className="text-white leading-relaxed">
+                <p className="text-black leading-relaxed">
                     A Pre-Engineered Building (PEB) is a steel structure designed, fabricated, and supplied as a complete system and assembled on-site.
                     It is faster, lighter, more cost-efficient, and highly adaptable for warehouses, factories, and large-span structures.
                 </p>
