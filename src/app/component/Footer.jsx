@@ -6,26 +6,49 @@ import {
   FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa";
+import { useRouter } from 'next/navigation'
+
 
 const quickLinks = [
   { name: "Home", path: "/" },
-  { name: "About Us", path: "/about" },
+  { name: "About Us", path: "/about-us" },
   { name: "Projects", path: "/projects" },
   { name: "Services", path: "/services" },
   { name: "Process", path: "/process" },
   { name: "Contact", path: "/contact" },
 ];
 
-const services = [
-  "Architecture",
-  "PEB Structures",
-  "Industrial Design",
-  "Construction",
-  "Consulting",
-  "Interior Design",
-];
+
+  const services = [
+    {
+      name: "Architecture",
+      path: "/architecture",
+    },
+    {
+      name: "PEB Structures",
+      path: "/peb",
+    },
+    {
+      name: "Industrial Design",
+      path: "/industries",
+    },
+    {
+      name: "Construction",
+      path: "/construction",
+    },
+    {
+      name: "Consulting",
+      path: "/contact",
+    },
+    {
+      name: "Interior Design",
+      path: "/projects",
+    },
+  ]
 
 const Footer = () => {
+    const router = useRouter()
+
   return (
     <footer className="relative overflow-hidden bg-[#050816] text-white">
 
@@ -58,9 +81,40 @@ const Footer = () => {
               innovation, precision, sustainability, and architectural
               excellence across industries.
             </p>
+
+            <div className="mt-6 flex items-center gap-4">
+
+    <a
+      href="https://facebook.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-gray-400 transition-all duration-300 hover:border-black hover:bg-white hover:text-black"
+    >
+      <FaFacebookF size={16} />
+    </a>
+
+    <a
+      href="https://instagram.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-gray-400 transition-all duration-300 hover:border-black hover:bg-white hover:text-black"
+    >
+      <FaInstagram size={16} />
+    </a>
+
+    <a
+      href="https://linkedin.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-gray-400 transition-all duration-300 hover:border-black hover:bg-white hover:text-black"
+    >
+      <FaLinkedinIn size={16} />
+    </a>
+
+  </div>
           </div>
 
-         
+          
           <div>
             <h3 className="mb-6 text-lg font-semibold">
               Quick Links
@@ -92,11 +146,12 @@ const Footer = () => {
               {services.map((service, index) => (
                 <li
                   key={index}
+                  onClick={() => router.push(service.path)}
                   className="group inline-flex items-center text-sm text-gray-400 transition duration-300 hover:text-white cursor-pointer"
                 >
                   <span className="mr-2 h-[2px] w-0 bg-blue-500 transition-all duration-300 group-hover:w-4" />
 
-                  {service}
+                  {service.name}
                 </li>
               ))}
             </ul>
@@ -140,6 +195,12 @@ const Footer = () => {
                   className="mt-1 block hover:text-white transition"
                 >
                   +91 8197361002
+                </a>
+                <a
+                  href="tel:+917760587776"
+                  className="mt-1 block hover:text-white transition"
+                >
+                  +91 7760587776
                 </a>
               </div>
             </div>

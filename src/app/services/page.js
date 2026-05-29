@@ -1,11 +1,11 @@
 "use client"
 import React, { useEffect, useRef } from 'react'
 import { processStages, constructionTypes, materials } from '../data/data'
-
+import { useRouter } from 'next/navigation'
 
 const page = () => {
     const sectionRef = useRef(null)
-
+    const router = useRouter()
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -47,26 +47,26 @@ const page = () => {
 
 
                         <div className="inline-flex items-center gap-3 mb-5 animate-fadeUp">
-                            <div className="w-12 h-px bg-blue-500" />
+                            <div className="w-12 h-px bg-amber-500" />
 
-                            <span className="text-blue-400 tracking-[6px] font-semibold text-sm uppercase">
+                            <span className="text-amber-400 tracking-[6px] font-semibold text-sm uppercase">
                                 Construction Services
                             </span>
 
-                            <div className="w-12 h-px bg-blue-500" />
+                            <div className="w-12 h-px bg-amber-500" />
                         </div>
 
 
                         <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight animate-fadeUp">
                             Precision Execution From <br />
 
-                            <span className="bg-gradient-to-r from-blue-400 via-blue-400 to-blue-400 bg-clip-text text-transparent">
+                            <span className="bg-gradient-to-r from-amber-400 via-amber-400 to-amber-400 bg-clip-text text-transparent">
                                 Ground-Breaking to Handover
                             </span>
                         </h1>
 
 
-                        <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-blue-500 mt-6 rounded-full animate-fadeIn" />
+                        <div className="w-24 h-1 bg-gradient-to-r from-amber-500 to-amber-500 mt-6 rounded-full animate-fadeIn" />
                     </div>
                 </div>
             </div>
@@ -76,7 +76,7 @@ const page = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 items-center px-4 sm:px-6 md:px-10 lg:px-16 py-14 md:py-20 gap-10 lg:gap-16 mb-20 md:mb-24 animate-on-scroll">
                 <div className="space-y-6">
                     <div>
-                        <span className="text-blue-400 text-sm font-semibold uppercase tracking-wider">OVERVIEW</span>
+                        <span className="text-amber-400 text-sm font-semibold uppercase tracking-wider">OVERVIEW</span>
                         <h2 className="text-3xl md:text-4xl font-bold mt-3 text-white">
                             We Build What Others Design - and Design What We Build
                         </h2>
@@ -87,7 +87,7 @@ const page = () => {
                         institutional campuses, and infrastructure works — we bring the same level of structural discipline
                         to every project category.
                     </p>
-                    <div className="bg-blue-500/10 border border-blue-500/20 rounded-2xl p-6">
+                    <div className="bg-amber-500/10 border border-amber-500/20 rounded-2xl p-6">
                         <p className="text-slate-200 leading-relaxed italic">
                             "What makes Stonearc different is not just what we build. It is how we manage the build —
                             with real-time cost tracking, documented quality checks, certified material sourcing, and
@@ -111,10 +111,10 @@ const page = () => {
 
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold text-white">
-                        What We <span className="text-blue-400">Construct</span>
+                        What We <span className="text-amber-400">Construct</span>
                     </h2>
 
-                    <div className="w-20 h-px bg-gradient-to-r from-transparent via-blue-500 to-transparent mx-auto mt-4" />
+                    <div className="w-20 h-px bg-gradient-to-r from-transparent via-amber-500 to-transparent mx-auto mt-4" />
                 </div>
 
 
@@ -123,7 +123,7 @@ const page = () => {
                     {constructionTypes.map((type, index) => (
                         <div
                             key={index}
-                            className="group relative h-[380px] rounded-2xl overflow-hidden border border-slate-700 hover:border-blue-500/50 transition-all duration-500"
+                            className="group relative h-[380px] rounded-2xl overflow-hidden border border-slate-700 hover:border-amber-500/50 transition-all duration-500"
                         >
 
 
@@ -156,7 +156,7 @@ const page = () => {
                                                 key={idx}
                                                 className="flex items-center gap-2 text-white text-sm"
                                             >
-                                                <span className="w-1.5 h-1.5 rounded-full bg-blue-400" />
+                                                <span className="w-1.5 h-1.5 rounded-full bg-amber-400" />
                                                 {feature}
                                             </li>
                                         ))}
@@ -172,7 +172,7 @@ const page = () => {
 
             <div className="mb-24 animate-on-scroll">
                 <div className="text-center  mb-12">
-                    <span className="text-blue-400 text-sm font-semibold uppercase tracking-wider">HOW WE WORK</span>
+                    <span className="text-amber-400 text-sm font-semibold uppercase tracking-wider">HOW WE WORK</span>
                     <h2 className="text-3xl md:text-4xl font-bold text-white mt-2">
                         Our Construction <span className="text-purple-400">Process</span>
                     </h2>
@@ -183,20 +183,20 @@ const page = () => {
                     {processStages.map((stage, index) => (
                         <div
                             key={index}
-                            className="group relative p-6 rounded-2xl bg-gradient-to-br from-slate-800/50 to-slate-900/50 border border-slate-700 hover:border-blue-500/50 transition-all duration-300 hover:transform hover:-translate-y-1"
+                            className="group relative p-6 rounded-2xl bg-gradient-to-br from-slate-800/50 to-slate-900/50 border border-slate-700 hover:border-amber-500/50 transition-all duration-300 hover:transform hover:-translate-y-1"
                         >
-                            <div className="absolute top-4 right-4 text-4xl font-bold text-blue-500/10 group-hover:text-blue-500/20 transition-colors">
+                            <div className="absolute top-4 right-4 text-4xl font-bold text-amber-500/10 group-hover:text-amber-500/20 transition-colors">
                                 {stage.stage}
                             </div>
                             <div className="flex items-center gap-3 mb-4">
-                                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-600/20 to-purple-600/20 flex items-center justify-center text-2xl">
+                                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-600/20 to-purple-600/20 flex items-center justify-center text-2xl">
                                     {stage.icon}
                                 </div>
                                 <h3 className="text-xl font-bold text-white">{stage.title}</h3>
                             </div>
                             <p className="text-slate-300 text-sm mb-3 font-semibold">{stage.actions}</p>
                             <div className="flex items-start gap-2">
-                                <span className="text-blue-400 text-xs">→</span>
+                                <span className="text-amber-400 text-xs">→</span>
                                 <p className="text-slate-400 text-xs">{stage.commitment}</p>
                             </div>
                         </div>
@@ -267,14 +267,16 @@ const page = () => {
 
 
             <div className="mt-20 text-center animate-on-scroll">
-                <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 rounded-3xl p-10 border border-blue-500/20">
+                <div className="bg-gradient-to-r from-amber-600/10 to-purple-600/10 rounded-3xl p-10 border border-amber-500/20">
                     <h3 className="text-2xl md:text-3xl font-bold text-white mb-3">
                         Ready to Start Your Construction Project?
                     </h3>
                     <p className="text-slate-300 mb-6">
                         Let's discuss your requirements and provide a detailed project estimate
                     </p>
-                    <button className="px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105">
+                    <button
+                    onClick={() => router.push('/contact')}
+                     className="px-8 py-3 bg-gradient-to-r from-amber-600 to-amber-600 hover:from-amber-500 hover:to-amber-500 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105">
                         Get a Free Consultation →
                     </button>
                 </div>
