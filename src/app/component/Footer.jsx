@@ -19,42 +19,42 @@ const quickLinks = [
 ];
 
 
-  const services = [
-    {
-      name: "Architecture",
-      path: "/architecture",
-    },
-    {
-      name: "PEB Structures",
-      path: "/peb",
-    },
-    {
-      name: "Industrial Design",
-      path: "/industries",
-    },
-    {
-      name: "Construction",
-      path: "/construction",
-    },
-    {
-      name: "Consulting",
-      path: "/contact",
-    },
-    {
-      name: "Interior Design",
-      path: "/projects",
-    },
-  ]
+const services = [
+  {
+    name: "Architecture",
+    path: "/architecture",
+  },
+  {
+    name: "PEB Structures",
+    path: "/peb",
+  },
+  {
+    name: "Industrial Design",
+    path: "/industries",
+  },
+  {
+    name: "Construction",
+    path: "/construction",
+  },
+  {
+    name: "Consulting",
+    path: "/contact",
+  },
+  {
+    name: "Interior Design",
+    path: "/projects",
+  },
+]
 
 const Footer = () => {
-    const router = useRouter()
+  const router = useRouter()
 
   return (
     <footer className="relative overflow-hidden bg-[#050816] text-white">
 
       <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-transparent to-purple-900/20 pointer-events-none" />
 
-     
+
       <div
         className="absolute inset-0 opacity-[0.04]"
         style={{
@@ -68,7 +68,7 @@ const Footer = () => {
 
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
 
-         
+
           <div>
             <img
               src="/logof.png"
@@ -84,37 +84,37 @@ const Footer = () => {
 
             <div className="mt-6 flex items-center gap-4">
 
-    <a
-      href="https://facebook.com"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-gray-400 transition-all duration-300 hover:border-black hover:bg-white hover:text-black"
-    >
-      <FaFacebookF size={16} />
-    </a>
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-gray-400 transition-all duration-300 hover:border-black hover:bg-white hover:text-black"
+              >
+                <FaFacebookF size={16} />
+              </a>
 
-    <a
-      href="https://instagram.com"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-gray-400 transition-all duration-300 hover:border-black hover:bg-white hover:text-black"
-    >
-      <FaInstagram size={16} />
-    </a>
+              <a
+                href="https://www.instagram.com/stonearcengineers"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-gray-400 transition-all duration-300 hover:border-black hover:bg-white hover:text-black"
+              >
+                <FaInstagram size={16} />
+              </a>
 
-    <a
+              {/* <a
       href="https://linkedin.com"
       target="_blank"
       rel="noopener noreferrer"
       className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-gray-400 transition-all duration-300 hover:border-black hover:bg-white hover:text-black"
     >
       <FaLinkedinIn size={16} />
-    </a>
+    </a> */}
 
-  </div>
+            </div>
           </div>
 
-          
+
           <div>
             <h3 className="mb-6 text-lg font-semibold">
               Quick Links
@@ -136,7 +136,7 @@ const Footer = () => {
             </ul>
           </div>
 
-         
+
           <div>
             <h3 className="mb-6 text-lg font-semibold">
               Our Services
@@ -157,7 +157,7 @@ const Footer = () => {
             </ul>
           </div>
 
-        
+
           <div>
             <h3 className="mb-6 text-lg font-semibold">
               Contact Us
@@ -207,12 +207,12 @@ const Footer = () => {
           </div>
         </div>
 
-      
+
         <div className="mt-16 border-t border-white/10 pt-6">
 
           <div className="flex flex-col items-center justify-between gap-5 text-center lg:flex-row lg:text-left">
 
-            
+
             <p className="text-sm text-gray-500">
               © {new Date().getFullYear()} StoneArc. All rights reserved.
             </p>
@@ -226,7 +226,7 @@ const Footer = () => {
               Developed By: NakshatraNamaha Creations
             </a>
 
-       
+
             <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-gray-500">
 
               <a
