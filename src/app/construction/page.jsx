@@ -1,10 +1,11 @@
 "use client"
 import React, { useEffect, useRef } from 'react'
 import { processStages, constructionTypes, materials } from '../data/data'
-
+import { useRouter } from "next/navigation"
 
 const page = () => {
     const sectionRef = useRef(null)
+    const router = useRouter()
 
 
     useEffect(() => {
@@ -277,7 +278,9 @@ const page = () => {
                     </p>
 
                     <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-                        <button className="bg-orange-500 hover:bg-orange-600 transition px-8 py-3 rounded-full font-semibold">
+                        <button 
+                         onClick={() => router.push("/contact")}
+                         className="bg-orange-500 hover:bg-orange-600 transition px-8 py-3 rounded-full font-semibold">
                             Get Free Consultation
                         </button>
 

@@ -8,7 +8,7 @@ export const content = [
     span: "Luxury Real Estate",
     heading: "We Don't Just Build Structures. We Build Legacies.",
     para1:
-      "At Stonearc Engineers, we bring together the precision of structural engineering, the vision of modern architecture, and the speed of Pre-Engineered Building (PEB) technology to deliver projects that stand the test of time — and purpose.",
+      "At Stonearc Engineers, we bring together the precision of structural engineering, the vision of modern architecture, and the speed of Pre-Engineered Building (PEB) technology to deliver projects that stand the test of time  and purpose.",
   },
   {
     span: "Modern Construction",
@@ -20,7 +20,7 @@ export const content = [
   {
     span: "Engineering Excellence",
     heading: "We Don't Just Build Structures. We Build Legacies.",
-    para1:  "We are not a contractor. We are your construction partner — from concept to completion.",
+    para1:  "We are not a contractor. We are your construction partner  from concept to completion.",
     
   },
 ]
@@ -29,7 +29,7 @@ export const content = [
 export const services = [
     {
         title: 'Construction',
-        description: 'From foundation to finishing, we execute civil construction projects with structural integrity, timeline precision, and material accountability. Residential towers, commercial spaces, institutional buildings, and industrial facilities — we build what matters.',
+        description: 'From foundation to finishing, we execute civil construction projects with structural integrity, timeline precision, and material accountability. Residential towers, commercial spaces, institutional buildings, and industrial facilities  we build what matters.',
         image: '/construction.jpg',
     },
     {
@@ -39,7 +39,7 @@ export const services = [
     },
     {
         title: 'Pre-Engineered Buildings (PEB)',
-        description: 'We design, supply, and erect Pre-Engineered Steel Buildings — the fastest, most cost-efficient solution for large-span industrial and commercial spaces. Warehouses, factories, logistics hubs, aircraft hangars — Stonearc PEB delivers in weeks, not months.',
+        description: 'We design, supply, and erect Pre-Engineered Steel Buildings  the fastest, most cost-efficient solution for large-span industrial and commercial spaces. Warehouses, factories, logistics hubs, aircraft hangars  Stonearc PEB delivers in weeks, not months.',
         image: '/peb.webp'
     }
 ]
@@ -55,7 +55,7 @@ export const items = [
         image: "/structural.jpg",
     },
     {
-        text: "Transparent project tracking — no surprises on cost or timeline",
+        text: "Transparent project tracking  no surprises on cost or timeline",
         image: "/transport.jpg",
     },
     {
@@ -77,7 +77,7 @@ export const values = [
     {
         title: "Structural Integrity",
         content:
-            "We never compromise on engineering safety — not for cost, not for timeline.",
+            "We never compromise on engineering safety  not for cost, not for timeline.",
         image: "/structural.jpg",
     },
     {
@@ -95,19 +95,19 @@ export const values = [
     {
         title: "Speed Without Shortcuts",
         content:
-            "PEB and construction delivered fast — but never at the cost of quality.",
+            "PEB and construction delivered fast  but never at the cost of quality.",
         image: "/speedwithout.jpg",
     },
     {
         title: "Client Partnership",
         content:
-            "We treat your project as if it is our own — because our reputation depends on it.",
+            "We treat your project as if it is our own  because our reputation depends on it.",
         image: "/partner.jpg",
     },
     {
         title: "Accountability",
         content:
-            "Problems are identified, owned, and resolved — never hidden.",
+            "Problems are identified, owned, and resolved  never hidden.",
         image: "/accountablity.jpg",
     },
 ]
@@ -198,7 +198,7 @@ export const processStages = [
         stage: "01",
         title: "Site Assessment",
         actions: "Soil testing, topographic survey, utility mapping",
-        commitment: "No assumptions — every site is evaluated independently",
+        commitment: "No assumptions  every site is evaluated independently",
         icon: "🔍"
     },
     {
@@ -579,9 +579,9 @@ export const processStagess = [
     title: "Initial Consultation & Site Assessment",
     subtitle: "Understanding your vision before drawing a single line.",
     points: [
-      "Detailed client brief — functional, spatial, and budget requirements",
-      "Site visit and physical assessment — soil, topography, access, utilities, neighbours",
-      "Preliminary feasibility — what is buildable, at what cost, and in what timeframe",
+      "Detailed client brief  functional, spatial, and budget requirements",
+      "Site visit and physical assessment  soil, topography, access, utilities, neighbours",
+      "Preliminary feasibility  what is buildable, at what cost, and in what timeframe",
       "Review of existing drawings, approvals, or structural reports if available",
     ],
     receive:
@@ -594,7 +594,7 @@ export const processStagess = [
     subtitle: "Precision architecture backed by structural intelligence.",
     points: [
       "Architectural concept and schematic design",
-      "Structural design — foundation, superstructure, and load analysis",
+      "Structural design  foundation, superstructure, and load analysis",
       "PEB frame analysis and structural planning",
       "Client review and design revisions",
       "Working drawings for construction and fabrication",
@@ -653,7 +653,7 @@ export const processStagess = [
 
 export const fallbackItems = [
   {
-    text: "We deliver complete engineering solutions — architecture, structural design, and PEB under one roof.",
+    text: "We deliver complete engineering solutions  architecture, structural design, and PEB under one roof.",
     image: "/project1.jpg",
   },
   {
@@ -661,7 +661,7 @@ export const fallbackItems = [
     image: "/project2.jpg",
   },
   {
-    text: "Our clients receive direct access to engineers — no intermediaries, no miscommunication.",
+    text: "Our clients receive direct access to engineers  no intermediaries, no miscommunication.",
     image: "/project3.jpg",
   },
   {
@@ -669,7 +669,7 @@ export const fallbackItems = [
     image: "/project4.jpg",
   },
   {
-    text: "Honest cost estimation from day one — no padding, no hidden charges, no surprises at handover.",
+    text: "Honest cost estimation from day one  no padding, no hidden charges, no surprises at handover.",
     image: "/project5.jpg",
   },
 ];
@@ -681,7 +681,7 @@ export const differentiators = [
     {
         title: "In-House Engineering",
         description:
-            "Stonearc engineers everything in-house — ensuring faster decisions, better coordination, and complete accountability from design to execution.",
+            "Stonearc engineers everything in-house  ensuring faster decisions, better coordination, and complete accountability from design to execution.",
         image:
             "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop",
     },
@@ -725,7 +725,7 @@ export const differentiators = [
 export const testimonials = [
     {
         quote:
-            "Stonearc gave us a warehouse that was ready in 14 weeks — on time, within budget, and built better than we expected.",
+            "Stonearc gave us a warehouse that was ready in 14 weeks  on time, within budget, and built better than we expected.",
         role: "Operations Director",
         company: "Logistics Company",
         image:

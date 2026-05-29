@@ -2,6 +2,8 @@
 
 import React, { useEffect, useState } from "react"
 import { content } from "../data/data"
+import { useRouter } from "next/navigation";
+
 
 const images = [
   "/hero.jpg",
@@ -13,6 +15,7 @@ const Hero = () => {
   const [currentImage, setCurrentImage] = useState(0)
   
   const currentContent = content[currentImage]
+ const router = useRouter();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -91,7 +94,10 @@ const Hero = () => {
 
               <div className="flex flex-col gap-4 sm:flex-row">
 
-                <button className="group relative overflow-hidden rounded-full bg-amber-600 px-8 py-4 text-sm sm:text-base font-semibold text-white shadow-2xl transition-all duration-300 hover:scale-105 hover:bg-amber-700">
+                <button
+                onClick={() => router.push("/contact")}
+                
+                className="group relative overflow-hidden rounded-full bg-amber-600 px-8 py-4 text-sm sm:text-base font-semibold text-white shadow-2xl transition-all duration-300 hover:scale-105 hover:bg-amber-700">
 
                   <span className="relative z-10">
                     Get a Free Estimate
@@ -101,7 +107,9 @@ const Hero = () => {
                 </button>
 
 
-                <button className="group rounded-full border border-white/20 bg-white/5 px-8 py-4 text-sm sm:text-base font-semibold text-white backdrop-blur-md transition-all duration-300 hover:border-white hover:bg-white hover:text-black">
+                <button 
+                onClick={() => router.push("/projects")}
+                className="group rounded-full border border-white/20 bg-white/5 px-8 py-4 text-sm sm:text-base font-semibold text-white backdrop-blur-md transition-all duration-300 hover:border-white hover:bg-white hover:text-black">
 
                   View Our Projects
 

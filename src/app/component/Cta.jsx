@@ -3,7 +3,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { items , fallbackItems } from "../data/data";
-
+import { useRouter } from "next/navigation";
 
 
 function usePreloadImages(imageList) {
@@ -31,6 +31,7 @@ const ProgressBar = ({ duration, active }) => (
 );
 
 const Cta = () => {
+  const router = useRouter();
   const data =
     typeof items !== "undefined" && Array.isArray(items) && items.length > 0
       ? items
@@ -165,13 +166,15 @@ const Cta = () => {
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-orange-500 hover:bg-orange-600 transition px-8 py-3 rounded-full font-semibold">
+            <button 
+            onClick={() => router.push("/contact")}
+             className="bg-orange-500 hover:bg-orange-600 transition px-8 py-3 rounded-full font-semibold">
               Request Consultation
             </button>
 
-            <button className="border border-white/20 px-8 py-3 rounded-full hover:border-orange-500 transition">
+            {/* <button className="border border-white/20 px-8 py-3 rounded-full hover:border-orange-500 transition">
               Download Brochure
-            </button>
+            </button> */}
           </div>
 
         </div>

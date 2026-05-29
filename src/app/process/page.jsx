@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { processStagess } from "../data/data"
+import { useRouter } from "next/navigation"
+
 
 const fadeUp = {
   hidden: { opacity: 0, y: 60 },
@@ -122,6 +124,7 @@ const StageCard = ({ stage, index }) => {
 };
 
 const Page = () => {
+  const router = useRouter()
   return (
     <section
       className=" bg-gray-100 overflow-hidden"
@@ -189,9 +192,7 @@ const Page = () => {
             >
               Structured Process.
               <br />
-              <span className="text-transparent bg-clip-text bg-[#fd6402]"
-
-              >
+              <span className="text-transparent bg-clip-text bg-[#fd6402]">
                 Predictable Delivery.
               </span>
             </motion.h1>
@@ -203,29 +204,6 @@ const Page = () => {
               Structure. Discipline. Delivery. This is how every Stonearc project
               runs — from first consultation to final handover.
             </motion.p>
-
-
-            <motion.div variants={fadeUp} className="mt-12 flex items-center gap-5 flex-wrap">
-              <motion.button
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.97 }}
-                className="relative px-8 py-4 rounded-full font-semibold text-white bg-[#fd6402] group"
-
-              >
-                <span className="relative z-10 ">Explore Process</span>
-                <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full" />
-              </motion.button>
-
-              <motion.button
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.97 }}
-                className="relative px-8 py-4 rounded-full font-semibold text-white bg-[#fd6402] group"
-
-              >
-                <span className="relative z-10">Scroll to stages</span>
-                <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full" />
-              </motion.button>
-            </motion.div>
           </motion.div>
 
 
@@ -435,6 +413,7 @@ const Page = () => {
               <motion.button
                 whileHover={{ scale: 1.04, boxShadow: "0 0 50px rgba(59,130,246,0.35)" }}
                 whileTap={{ scale: 0.97 }}
+                 onClick={() => router.push("/contact")}
                 className="mt-12 px-10 py-4 bg-white text-[#080e1c] rounded-full font-bold text-base transition-all duration-300 hover:bg-blue-50"
               >
                 Contact Our Team →

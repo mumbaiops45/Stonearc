@@ -104,7 +104,7 @@ const page = () => {
                         </motion.p>
 
 
-                        <motion.button
+                        {/* <motion.button
                             variants={fadeUp}
                             whileHover={{
                                 scale: 1.05,
@@ -114,7 +114,7 @@ const page = () => {
                             className="mt-10 px-8 py-4 bg-[#fd6402] hover:bg-[#fd6402] rounded-full font-semibold transition-all duration-300"
                         >
                             Explore Portfolio
-                        </motion.button>
+                        </motion.button> */}
 
                     </motion.div>
                 </div>
@@ -149,7 +149,7 @@ const page = () => {
                         <div className="w-32 h-1 bg-gradient-to-r from-[#fd6402] to-[#fd6402] rounded-full mt-8" />
                         <p className="mt-10 text-gray-900 text-lg leading-8 max-w-2xl">
                             The Stonearc portfolio spans residential, commercial,
-                            industrial, and institutional sectors — with projects ranging
+                            industrial, and institutional sectors  with projects ranging
                             from luxury homes to multi-lakh square feet developments
                             executed with engineering precision.
                         </p>

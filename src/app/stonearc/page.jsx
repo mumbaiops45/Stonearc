@@ -72,7 +72,7 @@ const page = () => {
                             disciplined delivery, and long-term trust.
                         </p>
 
-                        <div className="flex flex-wrap gap-5 mt-12">
+                        {/* <div className="flex flex-wrap gap-5 mt-12">
 
                             <button className="px-8 py-4 bg-[#fd6402] hover:bg-[#fd6402] rounded-full font-semibold transition-all duration-300 shadow-[0_0_40px_rgba(59,130,246,0.4)]">
                                 Explore Expertise
@@ -82,7 +82,7 @@ const page = () => {
                                 View Standards
                             </button>
 
-                        </div>
+                        </div> */}
 
                     </motion.div>
                 </div>

@@ -158,7 +158,7 @@ const page = () => {
                     </p>
                 </div>
 
-              
+
                 <div className="relative">
                     <button
                         onClick={scrollLeft}
@@ -190,42 +190,33 @@ const page = () => {
                                 <div className="h-[55%] w-full overflow-hidden">
                                     <img src={card.img} alt={card.title} className="w-full h-full object-cover object-top group-hover:scale-105 transition-all duration-700" />
                                 </div>
-                                {/* <div className="absolute bottom-0 left-0 w-full p-5 sm:p-6 bg-gradient-to-t from-black/95 via-black/80 to-transparent">
-                                    <h4 className="text-white text-base sm:text-xl font-semibold">{card.title}</h4>
-                                    <div className="w-0 group-hover:w-24 h-[2px] bg-[#fd6402] mt-3 mb-3 transition-all duration-500" />
-                                    <p className="text-gray-300 text-xs sm:text-sm leading-relaxed opacity-0 translate-y-5 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
-                                        {card.desc}
-                                    </p>
-                                </div> */}
-                                <div className="absolute bottom-0 left-0 w-full p-5 sm:p-6 bg-gradient-to-t from-black/95 via-black/80 to-transparent">
+                                <div className="absolute bottom-0 left-0 w-full p-3 sm:p-3 bg-gradient-to-t from-black/95 via-black/80 to-transparent">
+                                    <div className="group-hover:-translate-y-3 transition-all duration-500">
 
- 
-  <div className="group-hover:-translate-y-3 transition-all duration-500">
+                                        <h4 className="text-white text-base sm:text-xl font-semibold">
+                                            {card.title}
+                                        </h4>
 
-    <h4 className="text-white text-base sm:text-xl font-semibold">
-      {card.title}
-    </h4>
+                                        <div className="w-0 group-hover:w-24 h-[2px] bg-[#fd6402] mt-3 mb-3 transition-all duration-500" />
 
-    <div className="w-0 group-hover:w-24 h-[2px] bg-[#fd6402] mt-3 mb-3 transition-all duration-500" />
+                                        {/* 👇 KEY FIX */}
+                                        <div className="overflow-hidden max-h-0 group-hover:max-h-40 transition-all duration-500 ease-in-out">
 
-    {/* 👇 KEY FIX */}
-    <div className="overflow-hidden max-h-0 group-hover:max-h-40 transition-all duration-500 ease-in-out">
+                                            <p className="text-gray-300 text-xs sm:text-sm leading-relaxed">
+                                                {card.desc}
+                                            </p>
 
-      <p className="text-gray-300 text-xs sm:text-sm leading-relaxed">
-        {card.desc}
-      </p>
+                                        </div>
 
-    </div>
-
-  </div>
-</div>
+                                    </div>
+                                </div>
                             </div>
                         ))}
                     </div>
                 </div>
             </div>
 
-            
+
             <div className="bg-[#0f172a] py-12 sm:py-16 px-5 sm:px-8 lg:px-20">
                 <div className="text-center mb-10 sm:mb-14">
                     <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-wide leading-snug">
@@ -241,11 +232,11 @@ const page = () => {
 
                 <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
                     {[
-                        { title: "Plan Sanction",           desc: "End-to-end building plan approval submission with authorities and documentation support." },
-                        { title: "RERA Compliance",         desc: "Complete assistance in RERA registration, filings, and regulatory compliance process." },
-                        { title: "Fire NOC Approval",       desc: "Safety drawings and coordination for fire department approvals and clearances." },
+                        { title: "Plan Sanction", desc: "End-to-end building plan approval submission with authorities and documentation support." },
+                        { title: "RERA Compliance", desc: "Complete assistance in RERA registration, filings, and regulatory compliance process." },
+                        { title: "Fire NOC Approval", desc: "Safety drawings and coordination for fire department approvals and clearances." },
                         { title: "Environmental Clearance", desc: "Support for environmental permissions and required statutory approvals." },
-                        { title: "Occupancy Certificate",   desc: "Final documentation and coordination for occupancy certificate approval." },
+                        { title: "Occupancy Certificate", desc: "Final documentation and coordination for occupancy certificate approval." },
                     ].map((item, i) => (
                         <div key={i} className="group relative bg-gray-200 border border-white/10 rounded-2xl p-5 sm:p-6 hover:border-blue-400/40 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-500 overflow-hidden">
                             <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/10 to-transparent opacity-0 group-hover:opacity-100 transition duration-500" />
@@ -331,11 +322,11 @@ const page = () => {
 
                 <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                     {[
-                        { sector: "Residential",   types: "Independent homes, luxury villas, apartment buildings, gated communities" },
-                        { sector: "Commercial",    types: "Office buildings, retail spaces, mixed-use developments, hospitality" },
-                        { sector: "Industrial",    types: "Factory buildings, warehouse design, logistics hubs, processing units" },
+                        { sector: "Residential", types: "Independent homes, luxury villas, apartment buildings, gated communities" },
+                        { sector: "Commercial", types: "Office buildings, retail spaces, mixed-use developments, hospitality" },
+                        { sector: "Industrial", types: "Factory buildings, warehouse design, logistics hubs, processing units" },
                         { sector: "Institutional", types: "Schools, colleges, hospitals, government and civic buildings" },
-                        { sector: "Renovation",    types: "Building upgrades, adaptive reuse, structural modifications" },
+                        { sector: "Renovation", types: "Building upgrades, adaptive reuse, structural modifications" },
                     ].map((item, i) => (
                         <div key={i} className="group bg-gray-200 border border-white/10 rounded-2xl p-5 sm:p-6 hover:border-blue-400/40 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-500">
                             <h4 className=" text-base sm:text-lg font-semibold mb-2 sm:mb-3">{item.sector}</h4>

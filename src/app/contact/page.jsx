@@ -157,7 +157,7 @@ const Page = () => {
 
                         <motion.h1
                             variants={fadeUp}
-                            className="text-5xl md:text-7xl font-bold leading-none tracking-[-0.04em] text-white"
+                            className="text-5xl md:text-5xl font-bold leading-none tracking-[-0.04em] text-white"
                         >
                             Start Your Project
                             <span className="block mt-2 text-[#fd6402]">Conversation Today</span>
@@ -177,7 +177,7 @@ const Page = () => {
                             >
                                 Start a Conversation
                             </motion.a>
-                            <div className="flex items-center gap-3 text-white/40 text-sm">
+                            <div className="flex items-center gap-3 text-white/90 text-sm">
                                 <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
                                 Response within 24 hours
                             </div>
@@ -513,7 +513,6 @@ const Page = () => {
                                     {[
                                         { icon: "📞", label: "Phone", value: "+91 8197361002", href: "tel:+918197361002" },
                                         { icon: "✉️", label: "Email", value: "info@stonearcengineers.com", href: "mailto:info@stonearcengineers.com" },
-                                        // { icon: "🌐", label: "Website", value: "www.stonearc.com", href: "#" },
                                     ].map(({ icon, label, value, href }) => (
                                         <a key={label} href={href} className="flex items-center gap-4 group">
                                             <div className="w-11 h-11 rounded-xl bg-gray-50 border border-gray-200 flex items-center justify-center text-lg flex-shrink-0 transition-all duration-300 group-hover:border-[#fd6402]/40 group-hover:bg-orange-50">
