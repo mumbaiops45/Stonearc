@@ -109,13 +109,13 @@ const Hero = () => {
 
                 <button 
                 onClick={() => router.push("/projects")}
-                className="group rounded-full border border-white/20 bg-white/5 px-8 py-4 text-sm sm:text-base font-semibold text-white backdrop-blur-md transition-all duration-300 hover:border-white hover:bg-white hover:text-black">
+                className="group relative overflow-hidden rounded-full bg-amber-600 px-8 py-4 text-sm sm:text-base font-semibold text-white shadow-2xl transition-all duration-300 hover:scale-105 hover:bg-amber-700">
 
                   View Our Projects
 
-                  <span className="ml-2 inline-block transition-transform duration-300 group-hover:translate-x-1">
-                    →
-                  </span>
+                  {/* <span className="ml-2 inline-block transition-transform duration-300 group-hover:translate-x-1">
+                    
+                  </span> */}
                 </button>
               </div>
 
