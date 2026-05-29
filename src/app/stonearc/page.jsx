@@ -72,17 +72,7 @@ const page = () => {
                             disciplined delivery, and long-term trust.
                         </p>
 
-                        {/* <div className="flex flex-wrap gap-5 mt-12">
-
-                            <button className="px-8 py-4 bg-[#fd6402] hover:bg-[#fd6402] rounded-full font-semibold transition-all duration-300 shadow-[0_0_40px_rgba(59,130,246,0.4)]">
-                                Explore Expertise
-                            </button>
-
-                            <button className="px-8 py-4 border bg-[#fd6402] hover:bg-[#fd6402] rounded-full font-semibold transition-all duration-300">
-                                View Standards
-                            </button>
-
-                        </div> */}
+                        
 
                     </motion.div>
                 </div>
@@ -99,9 +89,9 @@ const page = () => {
                     className="text-center mb-24"
                 >
 
-                    <button className="px-5 py-2 border border-blue-500/30 bg-blue-500/10 rounded-full text-blue-300 tracking-[4px] uppercase text-sm">
+                    {/* <button className="px-5 py-2 border border-blue-500/30 bg-blue-500/10 rounded-full text-blue-300 tracking-[4px] uppercase text-sm">
                         Differentiators
-                    </button>
+                    </button> */}
 
                     <h2 className="mt-8 text-5xl md:text-5xl font-bold text-black">
                         What Makes Stonearc Different
@@ -437,9 +427,9 @@ const page = () => {
                     className="text-center mb-24"
                 >
 
-                    <button className="px-5 py-2 border border-blue-500/30 bg-blue-500/10 rounded-full text-blue-300 tracking-[4px] uppercase text-sm">
+                    {/* <button className="px-5 py-2 border border-blue-500/30 bg-blue-500/10 rounded-full text-blue-300 tracking-[4px] uppercase text-sm">
                         Client Testimonials
-                    </button>
+                    </button> */}
 
                     <h2 className="mt-8 text-4xl md:text-5xl font-bold text-black">
                         What Our Clients Say

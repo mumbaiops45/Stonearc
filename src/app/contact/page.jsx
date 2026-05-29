@@ -437,8 +437,6 @@ const Page = () => {
                     </motion.div>
 
                     <div className="grid lg:grid-cols-[1.4fr_1fr] gap-8 items-start">
-
-
                         <motion.div
                             initial={{ opacity: 0, y: 40 }}
                             whileInView={{ opacity: 1, y: 0 }}

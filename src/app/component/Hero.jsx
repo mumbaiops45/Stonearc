@@ -95,7 +95,7 @@ const Hero = () => {
               <div className="flex flex-col gap-4 sm:flex-row">
 
                 <button
-                onClick={() => router.push("/contact")}
+                onClick={() => router.push("/contact#contact-form")}
                 
                 className="group relative overflow-hidden rounded-full bg-amber-600 px-8 py-4 text-sm sm:text-base font-semibold text-white shadow-2xl transition-all duration-300 hover:scale-105 hover:bg-amber-700">
 
