@@ -262,7 +262,7 @@ export default function Page() {
                 <div>
                   <p className="text-xs text-gray-500 uppercase">Phone</p>
                   <p>
-                    <a className="text-black font-medium" href="tel:+918197361002">+91 81973 61002</a> ·{" "}
+                    {/* <a className="text-black font-medium" href="tel:+918197361002">+91 81973 61002</a> ·{" "} */}
                     <a className="text-black font-medium" href="tel:+917760587776">+91 77605 87776</a>
                   </p>
                 </div>
