@@ -90,6 +90,59 @@ const Page = () => {
         name: "", phone: "", email: "", location: "", type: "", description: "",
     });
 
+    const [loading, setLoading] = useState(false);
+const [status, setStatus] = useState(null); 
+
+    const handleChange = (e) => {
+        const {name , value} = e.target;
+
+        setFormData((prev) => ({
+            ...prev,
+            [name]: value,
+        }));
+    };
+
+
+    const handleSubmit = async (e) => {
+  e.preventDefault();
+  setLoading(true);
+  setStatus(null);
+
+  try {
+    const response = await fetch("https://formsubmit.co/ajax/info@stonearcengineers.com", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    const data = await response.json();
+
+    if (data.success === "true" || response.ok) {
+      setStatus("success");
+
+      // reset form
+      setFormData({
+        name: "",
+        phone: "",
+        email: "",
+        location: "",
+        type: "",
+        description: "",
+      });
+    } else {
+      setStatus("error");
+    }
+  } catch (error) {
+    console.error(error);
+    setStatus("error");
+  } finally {
+    setLoading(false);
+  }
+};
+
 
     const heroRef = useRef(null);
     const { scrollYProgress: heroScroll } = useScroll({
@@ -437,6 +490,7 @@ const Page = () => {
                     </motion.div>
 
                     <div className="grid lg:grid-cols-[1.4fr_1fr] gap-8 items-start">
+                        <form onSubmit={handleSubmit}>
                         <motion.div
                             initial={{ opacity: 0, y: 40 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -450,15 +504,21 @@ const Page = () => {
                             <div className="mt-2 mb-10">
                                 <ShimmerLine />
                             </div>
-
+    
                             <div className="grid sm:grid-cols-2 gap-4">
-                                <Field tag="input" placeholder="Your Name" type="text" />
-                                <Field tag="input" placeholder="Phone Number" type="tel" />
+                                
+                                <Field tag="input" name="name" placeholder="Your Name" type="text" value={formData.name}
+  onChange={handleChange} />
+                                <Field tag="input"  name="phone" placeholder="Phone Number" type="tel"  value={formData.phone}
+  onChange={handleChange} />
                                 <div className="sm:col-span-2">
-                                    <Field tag="input" placeholder="Email Address" type="email" />
+                                    <Field tag="input" name="email"  placeholder="Email Address" type="email"  value={formData.email}
+  onChange={handleChange}/>
                                 </div>
-                                <Field tag="input" placeholder="Project Location" type="text" />
-                                <Field tag="select">
+                                <Field tag="input" name="location" placeholder="Project Location" type="text" value={formData.location}
+  onChange={handleChange} />
+                                <Field tag="select"  name="type" value={formData.type}
+  onChange={handleChange}>
                                     <option value="" disabled>Project Type</option>
                                     <option>Construction</option>
                                     <option>Architecture</option>
@@ -470,23 +530,51 @@ const Page = () => {
                             <div className="mt-4">
                                 <Field
                                     tag="textarea"
+                                     name="description"
+                                    value={formData.description}
+  onChange={handleChange}
                                     placeholder="Brief project description — size, type, timeline, budget..."
                                 />
                             </div>
 
-                            <motion.button
+                            {/* <motion.button
                                 whileHover={{ scale: 1.02, boxShadow: "0 8px 30px rgba(253,100,2,0.35)" }}
                                 whileTap={{ scale: 0.98 }}
                                 className="mt-6 w-full py-4 rounded-2xl font-semibold text-white text-[15px] bg-[#fd6402] transition-all duration-300 relative overflow-hidden group"
                             >
-                                <span className="relative z-10">Send My Requirement →</span>
+                               
+                                <button
+  type="submit"
+  disabled={loading}
+  className=" w-full  rounded-2xl font-semibold text-white text-[15px] bg-[#fd6402] transition-all duration-300 relative overflow-hidden group disabled:opacity-60"
+>
+  <span className="relative ">
+    {loading ? "Sending..." : "Send My Requirement →"}
+  </span>
+</button>
                                 <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                            </motion.button>
+                            </motion.button> */}
+
+                            <motion.button
+  type="submit"
+  disabled={loading}
+  whileHover={{ scale: 1.02, boxShadow: "0 8px 30px rgba(253,100,2,0.35)" }}
+  whileTap={{ scale: 0.98 }}
+  className="mt-6 w-full py-4 rounded-2xl font-semibold text-white text-[15px] bg-[#fd6402] transition-all duration-300 relative overflow-hidden group disabled:opacity-60"
+>
+  <span className="relative z-10">
+    {loading ? "Sending..." : "Send My Requirement →"}
+  </span>
+
+  <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+</motion.button>
 
                             <p className="mt-5 text-center text-gray-400 text-xs">
                                 No spam. No obligation. Just an honest reply.
                             </p>
                         </motion.div>
+                         </form>
+                        
 
 
                         <motion.div
@@ -591,9 +679,9 @@ const Page = () => {
                                 Why Contact Us First?
                             </h2>
                         </div>
-                        <p className="text-gray-500 text-base max-w-xs leading-7 md:text-right">
+                        {/* <p className="text-gray-500 text-base max-w-xs leading-7 md:text-right">
                             Clear communication. Honest engineering. No surprises.
-                        </p>
+                        </p> */}
                     </motion.div>
 
 

@@ -236,19 +236,19 @@ const Footer = () => {
                 Privacy Policy
               </a>
 
-              <a
+              {/* <a
                 href="/terms"
                 className="transition hover:text-white"
               >
                 Terms & Conditions
-              </a>
+              </a> */}
 
-              <a
+              {/* <a
                 href="/support"
                 className="transition hover:text-white"
               >
                 Support
-              </a>
+              </a> */}
 
             </div>
           </div>
