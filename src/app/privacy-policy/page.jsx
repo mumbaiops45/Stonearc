@@ -269,8 +269,8 @@ export default function Page() {
 
                 <div>
                   <p className="text-xs text-gray-500 uppercase">Email</p>
-                  <a className="text-black font-medium" href="mailto:info@stonearc.com">
-                    info@stonearc.com
+                  <a className="text-black font-medium" href="mailto:info@stonearcengineers.com">
+                    info@stonearcengineers.com
                   </a>
                 </div>
 
