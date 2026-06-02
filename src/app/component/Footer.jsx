@@ -85,7 +85,7 @@ const Footer = () => {
             <div className="mt-6 flex items-center gap-4">
 
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/profile.php?id=61590527009858"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-gray-400 transition-all duration-300 hover:border-black hover:bg-white hover:text-black"
