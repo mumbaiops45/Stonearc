@@ -190,12 +190,12 @@ const Footer = () => {
                   Phone
                 </p>
 
-                <a
+                {/* <a
                   href="tel:+918197361002"
                   className="mt-1 block hover:text-white transition"
                 >
                   +91 8197361002
-                </a>
+                </a> */}
                 <a
                   href="tel:+917760587776"
                   className="mt-1 block hover:text-white transition"

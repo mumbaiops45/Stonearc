@@ -580,7 +580,7 @@ const Page = () => {
 
                                 <div className="space-y-5">
                                     {[
-                                        { icon: "📞", label: "Phone", value: "+91 8197361002", href: "tel:+918197361002" },
+                                        // { icon: "📞", label: "Phone", value: "+91 8197361002", href: "tel:+918197361002" },
                                         { icon: "📞", label: "Phone2", value: "+91 7760587776", href: "tel:+917760587776" },
                                         { icon: "✉️", label: "Email", value: "info@stonearcengineers.com", href: "mailto:info@stonearcengineers.com" },
                                     ].map(({ icon, label, value, href }) => (
